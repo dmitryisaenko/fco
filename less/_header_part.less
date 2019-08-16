@@ -1,0 +1,231 @@
+/* ==================================== */
+/*		  	  Header		
+/* ==================================== */
+header {
+  width: 100%;
+  height: 224px;
+  position: relative;
+}
+
+.header-top-line {
+  max-width: 1190px;
+  height: 170px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto 15px;
+}
+
+.main-logo {
+  display: flex;
+  /* flex-grow: 2; */
+  align-items: center;
+}
+
+.main-logo img {
+  max-height: 110px;
+}
+
+.logo-content {
+  max-width: 190px;
+  text-align: left;
+  margin-left: 13px;
+}
+
+.logo-content h1 {
+  font-size: 19px;
+}
+
+.logo-content h2 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.logo-content h1,
+.logo-content h2 {
+  color: #000;
+}
+
+.search-and-social-block {
+  display: flex;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-input {
+  /* flex-grow:2; */
+  height: 40px;
+  width: 100%;
+  border-radius: 0;
+  padding-left: 13px;
+  box-shadow: none;
+  border: 1px solid #b8bec0;
+  font-size: 16px;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.form-button-submit {
+  border: 0px;
+  background: #b8bec0;
+  color: white;
+  margin: 0;
+  padding-left: 40px;
+  width: 40px;
+  height: 40px;
+  outline: none;
+
+  font-size: 0;
+  position: relative;
+
+  border-radius: 0;
+  /*
+  
+  border: none;
+   */
+}
+
+.animate {
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.form-button-submit::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  width: 17px;
+  height: 17px;
+  margin-left: -8.5px;
+  margin-top: -8.5px;
+  background: url(../img/sprite.png);
+  background-position: 0px 0px;
+}
+
+.search-form:hover .search-input {
+  border: 1px solid #ffc934;
+}
+
+.search-form:hover .form-button-submit {
+  background: #ffc934;
+}
+
+.social {
+  /* width: 200px; */
+  margin-left: 10px;
+}
+
+.social ul {
+  display: flex;
+}
+
+.social li .social-icon {
+  margin: 0px 3px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background-color: #b8bec0;
+}
+
+.social li .social-icon::before {
+  position: absolute;
+  content: "";
+
+  top: 50%;
+
+  margin-left: -4.5px;
+  margin-top: -10px;
+}
+
+.social li.facebook .social-icon::before {
+  background: url(../img/sprite.png);
+  width: 9px;
+  height: 20px;
+  left: 50%;
+  background-position: -55px 0px;
+}
+
+.social li.facebook a:hover .social-icon {
+  background-color: #325a94;
+}
+
+.social li.youtube_channel .social-icon::before {
+  background: url(../img/sprite.png);
+  background-position: -24px 0px;
+  width: 26px;
+  height: 19px;
+  left: 30%;
+}
+
+.social li.youtube_channel a:hover .social-icon {
+  background-color: #e92a0a;
+}
+
+.social li.instagram .social-icon::before {
+  background: url(../img/sprite.png);
+  background-position: -93px 0px;
+  width: 19px;
+  height: 20px;
+  left: 37%;
+}
+
+.social li.instagram a:hover .social-icon {
+  background: -moz-linear-gradient(14deg,
+      #feb419 0%,
+      #ef7d5e 20%,
+      #a033b2 51%,
+      #7a46c1 75%,
+      #555cce 100%);
+  background: -webkit-linear-gradient(14deg,
+      #feb419 0%,
+      #ef7d5e 20%,
+      #a033b2 51%,
+      #7a46c1 75%,
+      #555cce 100%);
+  background: -o-linear-gradient(14deg,
+      #feb419 0%,
+      #ef7d5e 20%,
+      #a033b2 51%,
+      #7a46c1 75%,
+      #555cce 100%);
+  background: -ms-linear-gradient(14deg,
+      #feb419 0%,
+      #ef7d5e 20%,
+      #a033b2 51%,
+      #7a46c1 75%,
+      #555cce 100%);
+  background: linear-gradient(14deg,
+      #feb419 0%,
+      #ef7d5e 20%,
+      #a033b2 51%,
+      #7a46c1 75%,
+      #555cce 100%);
+  background-size: 100%;
+}
+
+.social li.twitter .social-icon::before {
+  background: url(../img/sprite.png);
+  background-position: -70px -2px;
+  width: 19px;
+  height: 20px;
+  left: 38%;
+  top: 55%;
+}
+
+.social li.twitter a:hover .social-icon {
+  background-color: #3ca7e6;
+}
+
+.sponsor img {
+  max-width: 200px;
+  flex-grow: 2;
+  /* display: none; */
+}

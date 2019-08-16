@@ -1,0 +1,10 @@
+/* font-family: "PFDinDisplayPro_regular"; */
+@font-face {
+	font-family: "PF DinDisplay Pro";
+	src: url("../fonts/PFDinDisplayPro_regular/PFDinDisplayPro-Regular.eot");
+	src: url("../fonts/PFDinDisplayPro_regular/PFDinDisplayPro-Regular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/PFDinDisplayPro_regular/PFDinDisplayPro-Regular.woff") format("woff"),
+	url("../fonts/PFDinDisplayPro_regular/PFDinDisplayPro-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

@@ -1,0 +1,220 @@
+/* ==================================== */
+/*		  	  News
+/* ==================================== */
+.news-block {
+    max-width: 1190px;
+    width: 90%;
+    margin: 36px auto 0px;
+  }
+  
+  .news-block h2.block-title {
+    margin-top: 0;
+    font-size: 19px;
+    color: #27282c;
+    text-transform: uppercase;
+    border-bottom: 2px solid #e8eaef;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 300;
+    color: #717378;
+  }
+  
+  .news-block h2.block-title span {
+    font-weight: 900;
+    color: #27282c;
+  }
+  
+  .news-block h2.block-title:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -2px;
+    width: 167px;
+    height: 2px;
+    background: #ffc934;
+  }
+  
+  .news-block .view-news {
+    margin-top: -32px;
+    z-index: 5;
+    text-align: right;
+    position: relative;
+  }
+  
+  .news-block .view-header {
+    display: inline-block;
+    text-align: right;
+    position: relative;
+  }
+  
+  .news-block .view-header a {
+    right: 0;
+    top: -22px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #717378;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 6.9px 10px;
+    padding-right: 41px;
+    border: 1px solid #ffc934;
+    position: relative;
+  }
+  
+  .news-block .view-header a:before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: 0;
+    height: 30px;
+    width: 33px;
+    background-image: url(../img/pointslide2.png);
+    background-size: 100% 100%;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    border-right: 1px solid #ffc934;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    border-top: none;
+  }
+  
+  .news-block .view-header a:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: -3px;
+    height: 5px;
+    width: 110%;
+    background: #fbfbfd;
+    z-index: -1;
+  }
+  
+  .news-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* flex-wrap: wrap; */
+  }
+  
+  .news-item {
+    padding: 0;
+    min-width: 285px;
+    /* width: 25%; */
+    margin: 0px 5px;
+  }
+  
+  .youtube-news{
+    cursor: pointer;
+  }
+  
+  .youtube-news::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    background: url(../img/youtube-button.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+  }
+  
+  .youtube-news:hover::after {
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -40px;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    cursor: pointer;
+  }
+  
+  .news-item-media-block {
+    position: relative;
+  }
+  
+  .news-item-image img {
+    padding: 0px;
+    /* height: 202px; */
+    width: 100%;
+    /* margin-bottom: -3px; */
+  }
+  
+  .news-item-image a {
+    height: 0;
+  }
+  
+  .news-item-image a:before {
+    content: "";
+    height: 0px;
+  }
+  
+  .news-item-meta {
+    position: absolute;
+    background: #ffc934;
+    left: 0;
+    bottom: 0;
+    padding: 5px 10px;
+    display: flex;
+  }
+  
+  .news-item-title {
+    background: #eef5f8;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 113px;
+  }
+  
+  .news-item-title:before {
+    position: absolute;
+    content: "";
+    width: 117px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: url(../img/pointersnews1.png);
+    background-size: 100% 100%;
+  }
+  
+  .news-item-title span {
+    display: block;
+    margin: auto 0;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 5;
+    max-height: 77px;
+    overflow: hidden;
+  }
+  
+  .news-item-title span a {
+    font-size: 18px;
+    color: #27282c;
+    font-weight: bold;
+  }
+  
+  .shop {
+    width: 100%;
+  }
+  
+  .shop img {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+  }

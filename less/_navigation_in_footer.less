@@ -1,0 +1,79 @@
+/* ==================================== */
+/*		  	  Navigaton Footer Menu		
+/* ==================================== */
+
+.menu-bottom-wrap {
+    background-color: rgb(238, 245, 248);
+    height: 54px;
+    width: 100%;
+    border-top: 1px solid #fff;
+  }
+  
+  .menu-bottom {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  
+  .menu-bottom ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .menu-bottom li {
+    width: 100%;
+    height: 54px;
+    text-align: center;
+    line-height: 54px;
+  }
+  
+  .menu-bottom li>a {
+    color: #232428;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    /* position: relative; */
+  }
+  
+  .menu-bottom li.menu-item:hover:not(.current-menu-item) {
+    border-top: 3px solid #ffc934;
+  }
+  
+  .menu-bottom li.menu-item:hover {
+    margin-top: -6px;
+    /* border: 1px solid red; */
+  }
+  
+  .menu-bottom li.menu-item:hover a {
+    /* color: red; */
+    /* padding-top: 20px; */
+  }
+  
+  .menu-bottom ul.sub-menu {
+    position: absolute;
+    top: auto;
+    bottom: 51px;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 260px;
+    width: 100%;
+    padding: 5px 0;
+    /* margin-top: 3px; */
+    list-style: none;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    border-bottom: 3px solid #ffc934;
+    border-radius: 4px 4px 0px 0px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+  }
+  
+  .menu-bottom li.menu-item-has-children ul.sub-menu>li:hover {
+    background: #eee;
+    border-top: none;
+  }
