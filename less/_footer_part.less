@@ -8,22 +8,25 @@ footer {
   }
   
   .social-block {
-    width: 1170px;
-    margin: auto;
+    max-width: 1190px;
+    margin: 15px auto;
   }
   
-  .social-block>.field-items {
+  .social-block .field-items {
+    
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   
-  .social-block>.field-items>.field-item.even {
+  .social-block>.field-items>.field-item:nth-child(2n-1) {
     background: #eef5f8;
+  
   }
   
   .social-block>.field-items>.field-item {
-    flex-basis: 25%;
+    width: 24%;
+    // flex-basis: 23%;
     padding: 30px 24px;
   }
   
@@ -49,17 +52,31 @@ footer {
     border: 1px solid #ffc934;
     padding-left: 58px;
     position: relative;
+    display: flex;
   }
-  
-  .social-block >.field-items>div .field-name-field-link::before {
+  .field-item-icon-fb,
+  .field-item-icon-yt,
+  .field-item-icon-tw,
+  .field-item-icon-inst{
+    // position: relative;
+    border: 1px solid #ffc934;
+  }
+
+  .field-item-icon-fb::before{
     position: absolute;
     content: "";
     top: 50%;
     left: 10px;
     background: url(../img/sprite.png);
+   
   }
-  
-  .social-block >.field-items>.field-item:nth-child(1)>div .field-name-field-link::before {
+
+  .field-item-icon-fb::before{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 10px;
+    background: url(../img/sprite.png);
     background-position: -128px -0px;
     left: 24px;
     width: 11px;
@@ -67,7 +84,12 @@ footer {
     margin-top: -12px;
   }
   
-  .social-block >.field-items>.field-item:nth-child(2)>div .field-name-field-link::before {
+  .field-item-icon-yt::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 10px;
+    background: url(../img/sprite.png);
     background-position: -208px -3px;
     left: 15px;
       width: 26px;
@@ -75,7 +97,12 @@ footer {
     margin-top: -9px;
   }
   
-  .social-block >.field-items>.field-item:nth-child(3)>div .field-name-field-link::before {
+  .field-item-icon-inst::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 10px;
+    background: url(../img/sprite.png);
     background-position: -180px -1px;
     left: 16px;
       width: 24px;
@@ -83,7 +110,12 @@ footer {
       margin-top: -12px;
   }
   
-  .social-block >.field-items>.field-item:nth-child(4)>div .field-name-field-link::before {
+  .field-item-icon-tw::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 10px;
+    background: url(../img/sprite.png);
     left: 17px;
     width: 26px;
     height: 22px;
@@ -97,8 +129,8 @@ footer {
     font-size: 17px;
     color: #27282c;
     font-weight: 300;
-    padding: 10px 0;
-    border-left: 1px solid #ffc934;
+    padding: 10px 20px;
+    // border-left: 1px solid #ffc934;
     -webkit-transition: all 0.1s linear;
     -moz-transition: all 0.1s linear;
     -o-transition: all 0.1s linear;
@@ -121,24 +153,11 @@ footer {
   }
 
   .footer{
-    width: 1170px;
+    max-width: 1170px;
     display: flex;
     height: 100%;
     margin: 0px auto;
   }
-
-  .general-partner{
-    width: 25%;
-    height: 100%;
-  }
-
-  .partners{
-    display: flex;
-    justify-content: center;
-    width: 85%;
-    height: 100%;
-  }
-
   .footer h2{
     font-size: 19px;
     color: #FAFAFC;
@@ -147,6 +166,10 @@ footer {
     margin-bottom: 30px;
   }
 
+  .general-partner{
+    width: 25%;
+    height: 100%;
+  }
   .general-partner-img{
     height: 100px;
     width: 200px;
@@ -155,15 +178,30 @@ footer {
   background-repeat: no-repeat;
   }
 
-  .general-partner-img:hover{
-    background-image: url(https://fco.com.ua/sites/default/files/styles/original/public/banners/logo_futer.png);
+  .partners{
+    width: 75%;
+    height: 100%;
   }
+  .partners-items-wrap{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  
+
+  
+.partners-items-wrap a{
+  min-width: 25%;
+}
 
   .partner-img{
     height: 100px;
-    width: 200px;
+    // max-width: 100%;
+    // min-width: 25%;
+    max-width: 100%;
     background-position: center;
-    background-size: 70%;
+    // background-size: 70%;
     background-repeat: no-repeat;
   }
 

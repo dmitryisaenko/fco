@@ -25,11 +25,6 @@
 <body>
     <!-- Header страницы -->
     <header>
-        <!-- <div class="logo_mini">
-            <a href="#">
-                <img src="img/logo_mini.png" alt="Mini logo">
-            </a>
-        </div> -->
 
         <!-- Навигация на моб. устройствах, меньше 576px -->
         <span class="toggle-button">
@@ -38,15 +33,15 @@
             <div class="menu-bar menu-bar-bottom"></div>
         </span>
         <div class="header-top-line">
-            <a href="#">
-                <div class="main-logo">
+            <div class="main-logo">
+                <a href="#">
                     <img src="img/logo.png" alt="" />
                     <div class="logo-content">
                         <h2>ОФІЦІЙНИЙ САЙТ</h2>
                         <h1>ФУТБОЛЬНИЙ КЛУБ ОЛЕКСАНДРІЯ</h1>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
             <div class="search-and-social-block">
                 <div class="search">
                     <form class="search-form " action="">
@@ -251,9 +246,9 @@
                 </div>
             </div>
         </section>
-        <section class="shop">
+        <!-- <section class="shop">
             <img src="/img/shop.jpg" alt="">
-        </section>
+        </section> -->
 
     </main>
 
@@ -261,16 +256,19 @@
     <footer>
         <section class="social-block">
             <div class="field-items">
-                <div class="field-item even">
+                <div class="field-item">
                     <div>
                         <div class="field-name-field-title">
                             <div class="field-items">
-                                <div class="field-item even">Facebook</div>
+                                <div class="field-item">Facebook</div>
                             </div>
                         </div>
-                        <div class="field-name-field-link field-type-link-field field-label-hidden">
+                        <div class="field-name-field-link">
+                            <div class=".field-item-icon field-item-icon-fb ">
+                                
+                            </div>
                             <div class="field-items">
-                                <div class="field-item even">
+                                <div class="field-item">
                                     <a href="https://www.facebook.com/fcolexandria" target="_blank"
                                         rel="nofollow">@fcolexandria</a>
                                 </div>
@@ -278,14 +276,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="field-item odd">
+                <div class="field-item">
                     <div>
                         <div class="field-name-field-title">
                             <div class="field-items">
-                                <div class="field-item even">Youtube</div>
+                                <div class="field-item">Youtube</div>
                             </div>
                         </div>
-                        <div class="field-name-field-link field-type-link-field field-label-hidden">
+                        <div class="field-name-field-link">
+                                <div class="field-item-icon-yt">
+                                
+                                    </div>
                             <div class="field-items">
                                 <div class="field-item even">
                                     <a href="https://www.youtube.com/channel/UCHDzcbylV7d69hn1BTnJ_qA/videos"
@@ -295,16 +296,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="field-item even">
+                <div class="field-item">
                     <div>
                         <div class="field-name-field-title">
                             <div class="field-items">
-                                <div class="field-item even">Instagram</div>
+                                <div class="field-item">Instagram</div>
                             </div>
                         </div>
-                        <div class="field-name-field-link field-type-link-field field-label-hidden">
+                        <div class="field-name-field-link"><div class="field-item-icon-inst">
+                                
+                            </div>
                             <div class="field-items">
-                                <div class="field-item even">
+                                <div class="field-item">
                                     <a href="https://www.instagram.com/fcolexandria" target="_blank"
                                         rel="nofollow">fcolexandria</a>
                                 </div>
@@ -312,16 +315,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="field-item odd">
+                <div class="field-item">
                     <div>
                         <div class="field-name-field-title">
                             <div class="field-items">
-                                <div class="field-item even">Twitter</div>
+                                <div class="field-item">Twitter</div>
                             </div>
                         </div>
-                        <div class="field-name-field-link field-type-link-field field-label-hidden">
+                        <div class="field-name-field-link"><div class="field-item-icon-tw">
+                                
+                            </div>
                             <div class="field-items">
-                                <div class="field-item even">
+                                <div class="field-item">
                                     <a href="https://twitter.com/FCO1948" target="_blank" rel="nofollow">@FCO1948</a>
                                 </div>
                             </div>
@@ -373,11 +378,13 @@
                         </a>
                     </div>
                 </div>
-                <div>
+                <div class="partners">
                     <h2>
                         Партнери
                     </h2>
-                    <div class="partners">
+                    
+                    
+                    <div class="partners-items-wrap">
                         <a href="#" alt="Nike">
                             <div class="partner-img"
                                 style="background-image: url(https://fco.com.ua/sites/default/files/styles/original/public/banners/nike-gray.png);"
@@ -416,27 +423,16 @@
                 <span class="pull-left">© ФК Олександрія. 2008-2019. Всі права захищено</span>
                 <span class="pull-right">
                     Розроблено: <a href="https://lodzhir.com" target="_blank" class="lodzhir">
-                        IDV
+                        IDV-man
                     </a>
                 </span>
             </div>
 
         </section>
-        <!-- <div class="footer_content">
-            <div class="footer_logo">
-                <img src="img/logo_mini.png" alt="Mini logo">
-            </div>
-            <div class="footer_copyright">
-                © 2019 footer-copyright
-            </div>
-            <div class="footer_pay_cards">
-                <img src="img/pay_cards.png" alt="">
-            </div>
-        </div> -->
     </footer>
 
     <!-- Кнопка возврата наверх -->
-    <div id="back-top" class="back-top"></div>
+    <!-- <div id="back-top" class="back-top"></div> -->
 
     <script src="libs/jquery-3.2.1.min.js"></script>
     <!-- <script src="libs/owl-carousel/owl.carousel.min.js"></script> -->

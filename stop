@@ -1,0 +1,35 @@
+[33mcommit 9bbf27947f11e4e9edeced5c683ef6a5d7877ffe[m[33m ([m[1;36mHEAD -> [m[1;32mtest[m[33m)[m
+Author: Dmitry Isaenko <isaenkodmitry@gmail.com>
+Date:   Tue Aug 20 12:21:27 2019 +0300
+
+    Top and Bottom menus works
+
+[33mcommit 8453aac672cf08a626ff9a34fa8d4258d120121b[m
+Author: Dmitry Isaenko <isaenkodmitry@gmail.com>
+Date:   Tue Aug 20 12:13:04 2019 +0300
+
+    Top menu works!
+
+[33mcommit 11033550834e3ff379143a56aac7f1b66a7c4633[m
+Author: Dmitry Isaenko <isaenkodmitry@gmail.com>
+Date:   Tue Aug 20 11:05:53 2019 +0300
+
+    test2
+
+[33mcommit 87c1c486be616d9b962a555ab6b76aa43ec6b60d[m
+Author: Dmitry Isaenko <isaenkodmitry@gmail.com>
+Date:   Tue Aug 20 11:05:00 2019 +0300
+
+    test1
+
+[33mcommit b8a869dbe76ab46f0f661dec32637ed502732d49[m[33m ([m[1;32mmob_menu[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Dmitry Isaenko <isaenkodmitry@gmail.com>
+Date:   Mon Aug 19 16:22:16 2019 +0300
+
+    Состояние перед добавлением нового моб. меню
+
+[33mcommit 76cbbda709f0af641f182f31e3768a07727e808a[m
+Author: Dmitry Isaenko <isaenkodmitry@gmail.com>
+Date:   Fri Aug 16 18:49:48 2019 +0300
+
+    Home page done without media.css

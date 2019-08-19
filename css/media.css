@@ -11,21 +11,390 @@
 /*992 и больше */
 /*1201 и больше */
 /* ----------------- ЗНАЧЕНИЕ И МЕНЬШЕ -----------------*/
+/*1200 и меньше */
+@media only screen and (max-width: 1200px) {
+  .shop img {
+    max-width: 95%;
+  }
+}
 /*1100 и меньше */
 @media only screen and (max-width: 1100px) {
+  header {
+    height: 234px;
+  }
   .header-top-line {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .main-logo {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 50%;
   }
   .search-and-social-block {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .menu-top {
+    margin-top: 10px;
+  }
+  .info-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .info-block-container {
+    width: 40%;
+  }
+  .info-table {
+    width: 90%;
+    height: 250px;
+  }
+  .news-block {
+    max-width: 1000px;
+  }
+  .shop img {
+    max-width: 90%;
   }
 }
 /*991 и меньше */
+@media only screen and (max-width: 991px) {
+  header {
+    height: 214px;
+  }
+  .menu-top-wrap {
+    height: 44px;
+  }
+  .menu-top {
+    line-height: 44px;
+  }
+  .menu-top li {
+    height: 46px;
+  }
+  .menu-top li > a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  ul.sub-menu {
+    top: 43px;
+    min-width: 200px;
+  }
+  ul.sub-menu a {
+    padding: 14px;
+  }
+  .news-container {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .news-item {
+    max-width: 40%;
+    margin: 15px 0px;
+  }
+  .social-block .field-items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .social-block > .field-items > .field-item {
+    width: 34%;
+    padding: 30px 24px;
+  }
+  .social-block > .field-items > .field-item:nth-child(2n-1) {
+    background: transparent;
+  }
+  .social-block > .field-items > .field-item:first-child,
+  .social-block > .field-items > .field-item:last-child {
+    background: #eef5f8;
+  }
+  .footer h2 {
+    text-align: center;
+  }
+  .partners {
+    margin-left: 30px;
+  }
+  .partners-items-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .partners-items-wrap a {
+    min-width: 40%;
+  }
+  .partner-img {
+    background-size: 70%;
+  }
+}
 /*880 и меньше */
 /*768 и меньше */
+@media only screen and (max-width: 768px) {
+  header {
+    height: 180px;
+  }
+  .menu-top-wrap {
+    display: block;
+  }
+  .menu-bottom-wrap {
+    display: none;
+  }
+  .main-logo img {
+    max-height: 80px;
+    margin-left: 10px;
+  }
+  .logo-content h1 {
+    font-size: 16px;
+  }
+  .logo-content h2 {
+    font-size: 11px;
+  }
+  .sponsor img {
+    max-width: 140px;
+  }
+  .info-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .info-block-container {
+    width: 90%;
+    height: 250px;
+  }
+  .news-item {
+    max-width: 80%;
+    margin: 10px 0px;
+  }
+  .news-item-meta {
+    font-size: 12px;
+  }
+  .news-item-title {
+    height: 100px;
+  }
+  .news-item-title:before {
+    width: 30%;
+  }
+  .field-name-field-link a {
+    font-size: 15px;
+    padding: 10px 10px;
+  }
+  /* ==================================== */
+  /*		  	  Mobile Sidebar Menu		
+/* ==================================== */
+  .toggle-button {
+    display: block;
+  }
+  .menu-top-wrap {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    margin-left: 0px;
+    font-size: 1em;
+    font-weight: 700;
+    overflow: auto;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    z-index: 10;
+    display: none;
+  }
+  .menu-show {
+    margin-left: 0;
+    -webkit-box-shadow: 4px 2px 15px 1px #b9adad;
+            box-shadow: 4px 2px 15px 1px #b9adad;
+  }
+  .menu-top {
+    position: relative;
+    top: 70px;
+  }
+  .menu-top ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-top li {
+    padding: 18px 22px 0;
+    text-align: left;
+  }
+  .menu-top li > a {
+    color: #fff;
+    font-size: 1.18em;
+    position: relative;
+  }
+  .menu-top-wrap nav.menu-top li.menu-item:hover {
+    background-color: transparent;
+    border: none;
+  }
+  li.menu-item:hover > a {
+    color: #fff;
+  }
+  .menu-top li a::after {
+    content: "";
+    display: block;
+    height: 0.15em;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50.3%, transparent), color-stop(50.3%, #ffc934));
+    background-image: linear-gradient(to right, transparent 50.3%, #ffc934 50.3%);
+    -webkit-transition: background-position 0.2s 0.1s ease-out;
+    transition: background-position 0.2s 0.1s ease-out;
+    background-size: 200% auto;
+  }
+  .menu-top li > a:hover::after {
+    background-position: -100% 0;
+  }
+  .menu-top .menu-item-has-children {
+    position: initial;
+  }
+  .menu-top .menu-item-has-children:hover > ul.sub-menu {
+    display: none;
+    border: none;
+    /* min-width: 200px; */
+  }
+  .menu-top .menu-item-has-children .sub-menu {
+    display: none;
+    position: relative;
+    border: none;
+  }
+  .menu-top .menu-item-has-children .sub-menu li {
+    padding: 0;
+  }
+  .menu-top li.menu-item-has-children ul.sub-menu > li:hover {
+    background: transparent;
+  }
+  .sidebar-menu-arrow::after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    padding: 10px;
+    color: #fffa3b;
+    position: relative;
+  }
+  .sidebar-menu-arrow:hover::after {
+    cursor: pointer;
+    color: #fff;
+  }
+  .sidebar-menu-arrow:active::after {
+    top: 2px;
+  }
+}
 /*621 и меньше */
+@media only screen and (max-width: 621px) {
+  .social-block > .field-items > .field-item {
+    width: 54%;
+    padding: 30px 24px;
+  }
+  .social-block > .field-items > .field-item:nth-child(1n),
+  .social-block > .field-items > .field-item:last-child {
+    background: transparent;
+  }
+  .social-block > .field-items > .field-item:nth-child(2n) {
+    background: #eef5f8;
+  }
+}
 /*576 и меньше */
+@media only screen and (max-width: 576px) {
+  header {
+    height: 190px;
+    margin-top: 10px;
+  }
+  .main-logo img {
+    margin-left: 40px;
+  }
+  .search-and-social-block {
+    display: block;
+    width: 90%;
+    margin: 10px auto 0;
+  }
+  .social ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .search-and-social-block .social ul {
+    margin: 10px 0;
+  }
+  .social li {
+    margin: 0 10px;
+  }
+  .youtube-news::after {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+  .youtube-news:hover::after {
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .news-item-meta {
+    font-size: 13px;
+  }
+  .news-item-title span a {
+    font-size: 16px;
+  }
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .general-partner {
+    width: 100%;
+  }
+  .partners {
+    width: 100%;
+  }
+  .general-partner-img {
+    margin: 0 auto;
+  }
+  .partner-img {
+    background-position: inherit;
+  }
+  .copyright {
+    padding-top: 15px;
+    padding-bottom: 0px;
+  }
+  .copyright span {
+    display: block;
+  }
+  .pull-left,
+  .pull-right {
+    float: none !important;
+    text-align: center;
+  }
+  .pull-right {
+    margin-top: 13px;
+  }
+}
+/*400 и меньше */
+@media only screen and (max-width: 400px) {
+  .sponsor img {
+    display: none;
+  }
+  .social-block > .field-items > .field-item {
+    width: 235px;
+    padding: 30px 24px;
+  }
+}
 /*320 и меньше */
