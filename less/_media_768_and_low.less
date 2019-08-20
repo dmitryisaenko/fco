@@ -3,7 +3,7 @@
     height: 180px;
   }
   .menu-top-wrap {
-    display: block;
+    display: none;
   }
   .menu-bottom-wrap {
     display: none;
@@ -50,110 +50,7 @@
     padding: 10px 10px
   }
   
- 
+  @import "_mobile_navigation.less";
 
-  /* ==================================== */
-  /*		  	  Mobile Sidebar Menu		
-/* ==================================== */
-
-  .toggle-button {
-    display: block;
-  }
-
-  .menu-top-wrap {
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 250px;
-    margin-left: 0px;
-    margin-left: -280px;
-    font-size: 1em;
-    font-weight: 700;
-    overflow: auto;
-    transition: 0.25s;
-    z-index: 10;
-    // display: none;
-  }
-  .menu-show {
-    margin-left: 0;
-    box-shadow: 4px 2px 15px 1px #b9adad;
-  }
-  .menu-top {
-    // margin: 75px 0 80px 10px;
-    position: relative;
-    top: 70px;
-  }
-  .menu-top ul {
-    flex-direction: column;
-  }
-  .menu-top li {
-    padding: 18px 22px 0;
-    text-align: left;
-  }
-  .menu-top li > a {
-    color: #fff;
-    font-size: 1.18em;
-    position: relative;
-  }
-  .menu-top-wrap nav.menu-top li.menu-item:hover {
-    background-color: transparent;
-    border: none;
-  }
-  li.menu-item:hover > a {
-    color: #fff;
-  }
-  .menu-top li a::after {
-    content: "";
-    display: block;
-    height: 0.15em;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    left: 50%;
-    transform: translate(-50%);
-    background-image: linear-gradient(
-      to right,
-      transparent 50.3%,
-      #ffc934 50.3%
-    );
-    transition: background-position 0.2s 0.1s ease-out;
-    background-size: 200% auto;
-  }
-  .menu-top li > a:hover::after {
-    background-position: -100% 0;
-  }
-  .menu-top .menu-item-has-children {
-    position: initial;
-  }
-  .menu-top .menu-item-has-children:hover > ul.sub-menu {
-    display: none;
-
-    border: none;
-    /* min-width: 200px; */
-  }
-  .menu-top .menu-item-has-children .sub-menu {
-    display: none;
-    position: relative;
-    border: none;
-  }
-  .menu-top .menu-item-has-children .sub-menu li {
-    padding: 0;
-  }
-  .menu-top li.menu-item-has-children ul.sub-menu > li:hover {
-    background: transparent;
-  }
-  .sidebar-menu-arrow::after {
-    content: "\f107";
-    font-family: "FontAwesome";
-    padding: 10px;
-    color: #fffa3b;
-    position: relative;
-  }
-  .sidebar-menu-arrow:hover::after {
-    cursor: pointer;
-    color: #fff;
-  }
-  .sidebar-menu-arrow:active::after {
-    top: 2px;
-  }
+  
 }

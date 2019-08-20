@@ -16,7 +16,7 @@ $(document).ready(function(){
 
     // Скрытие/отображение пунктов меню для моб. версии
     var $toggleButton = $('.toggle-button'),
-    	$menuWrap = $('.menu-top-wrap'),
+    	$menuWrap = $('.menu-wrap'),
     	$sidebarArrow = $('.sidebar-menu-arrow');
 
 	// Hamburger button

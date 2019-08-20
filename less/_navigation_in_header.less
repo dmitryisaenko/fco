@@ -40,11 +40,12 @@
   border-bottom: 3px solid #ffc934;
 }
 
-li.menu-item:hover>a {
+li.menu-item a:hover {
   color: #ffc934;
 }
 
-li ul li:hover {
+.menu-top li ul li:hover,
+.menu-bottom li ul li:hover {
   background: #1c1d21;
 }
 
@@ -60,7 +61,7 @@ li.menu-item-has-children {
   position: relative;
 }
 
-ul.sub-menu {
+.menu-top-wrap ul.sub-menu {
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -93,86 +94,16 @@ ul.sub-menu a {
   padding: 14px 25px;
 }
 
-li.menu-item-has-children:hover>ul.sub-menu {
+.menu-top-wrap li.menu-item-has-children:hover>ul.sub-menu,
+.menu-bottom-wrap li.menu-item-has-children:hover>ul.sub-menu {
   display: block;
   visibility: visible;
   opacity: 1;
 }
 
-.menu-top li.menu-item-has-children ul.sub-menu>li:hover {
+.menu-top-wrap .menu-top li.menu-item-has-children ul.sub-menu>li:hover {
   background: #1c1d21;
   border-bottom: none;
 }
 
-/*Hamburger Button*/
-.toggle-button {
-  position: fixed;
-  width: 44px;
-  height: 40px;
-  top: 5px;
-  left: 3px;
-  padding: 4px;
-  transition: 0.25s;
-  z-index: 15;
-  display: none;
-  border: 1px solid grey;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-}
 
-.toggle-button:hover {
-  cursor: pointer;
-}
-
-.toggle-button .menu-bar {
-  position: absolute;
-
-  border-radius: 2px;
-  width: 80%;
-  transition: 0.5s;
-}
-
-.toggle-button .menu-bar-top {
-  border: 4px solid #555;
-  border-bottom: none;
-  top: 5px;
-}
-
-.toggle-button .menu-bar-middle {
-  height: 4px;
-  background-color: #555;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  top: 9px;
-}
-
-.toggle-button .menu-bar-bottom {
-  border: 4px solid #555;
-  border-top: none;
-  top: 27px;
-}
-
-.button-open {
-  /* left: 25px; */
-}
-
-.button-open .menu-bar-top {
-  border-color: #fff;
-  transform: rotate(45deg) translate(8px, 8px);
-  transition: 0.5s;
-}
-
-.button-open .menu-bar-middle {
-  background-color: #fff;
-  /* transform: translate(230px); */
-  transition: 0.1s ease-in;
-  opacity: 0;
-}
-
-.button-open .menu-bar-bottom {
-  border-color: #fff;
-  transform: rotate(-45deg) translate(7px, -7px);
-  transition: 0.5s;
-}
