@@ -301,7 +301,7 @@ header {
   background: #1c1d21;
   border-bottom: 3px solid #ffc934;
 }
-li.menu-item a:hover {
+li.menu-item:hover > a {
   color: #ffc934;
 }
 .menu-top li ul li:hover,
@@ -756,9 +756,8 @@ section.footer-wrap {
 }
 .general-partner-img {
   height: 100px;
-  width: 200px;
+  width: 100%;
   background-position: center;
-  background-size: 90%;
   background-repeat: no-repeat;
 }
 .partners {

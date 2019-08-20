@@ -2,23 +2,30 @@
   header {
     height: 214px;
   }
-  .menu-top-wrap {
+  .menu-top-wrap,
+  .menu-bottom-wrap {
     height: 44px;
   }
-  .menu-top {
+  .menu-top,
+  .menu-bottom {
     line-height: 44px;
   }
-  .menu-top li {
+  .menu-top li,
+  .menu-bottom li {
     height: 46px;
+    line-height: 44px;
   }
-  .menu-top li > a {
-    color: #fff;
-    text-transform: uppercase;
+  .menu-top li > a,
+  .menu-bottom li > a {
     font-size: 15px;
   }
-  ul.sub-menu {
+  .menu-top-wrap ul.sub-menu {
     top: 43px;
-    min-width: 200px;
+    min-width: 150px;
+  }
+  .menu-bottom-wrap .menu-bottom ul.sub-menu {
+    bottom: 41px;
+    min-width: 150px;
   }
   ul.sub-menu a {
     padding: 14px;
@@ -45,11 +52,17 @@
   .social-block>.field-items>.field-item:first-child,.social-block>.field-items>.field-item:last-child {
     background: #eef5f8;
   }
-  .footer h2{
-    text-align: center;
+
+  .general-partner{
+    width: 35%;
   }
   .partners{
+    width: 65%;
     margin-left: 30px;
+  }
+
+  .footer h2{
+    text-align: center;
   }
 
   .partners-items-wrap{
@@ -60,7 +73,7 @@
   }
 
   .partner-img{
-    background-size: 70%;
+    background-size: 60%;
   }
 
 }
