@@ -498,6 +498,89 @@ main {
   background: #fbfbfd;
   z-index: -1;
 }
+/* -------------------- */
+/* Header for news-page */
+#single-news-page .view-news {
+  margin-top: -50px;
+  margin-bottom: 30px;
+}
+.view-numbers-of-news {
+  display: inline-block;
+  font-size: 14px;
+  color: #717378;
+  font-weight: bold;
+  position: relative;
+  top: 5px;
+}
+.view-numbers-of-news::before {
+  position: absolute;
+  content: "";
+  right: -380px;
+  top: 20px;
+  height: 5px;
+  width: 380px;
+  background: #FBFBFD;
+}
+.news-view-filters {
+  margin-left: 10px;
+}
+.view-news-single-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.news-view-filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -8px;
+}
+.news-view-filter-item {
+  border: 1px solid #ffc934;
+  position: relative;
+  z-index: 99;
+  margin: 0 2px;
+  border-radius: 0;
+  margin: 0 5px;
+}
+.news-view-filter-item::before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 32px;
+  right: 0;
+  top: 0;
+  background: url(../img//pointslide2.png);
+  background-size: 100% 100%;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  border-top: 1px solid #ffc934;
+  z-index: -1;
+}
+.news-view-filter-item select {
+  position: relative;
+  padding: 7px 18px;
+  padding-right: 41px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #717378;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+/* End of Header for news-page */
+/* -------------------- */
 .news-container {
   display: -webkit-box;
   display: -ms-flexbox;
