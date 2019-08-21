@@ -413,6 +413,23 @@ main {
   margin: 15px auto;
   max-width: 100%;
 }
+.breadcrumb-wrapper {
+  background: #EEF5F8;
+  width: 100%;
+}
+.breadcrumb {
+  max-width: 1190px;
+  margin: 0px auto 20px;
+  padding: 8px 15px;
+  list-style: none;
+}
+.breadcrumb-wrapper .breadcrumb a,
+.breadcrumb-wrapper .breadcrumb span {
+  color: #6E6E77;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
 /* ==================================== */
 /*		  	  News
 /* ==================================== */

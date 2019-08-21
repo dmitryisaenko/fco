@@ -72,7 +72,7 @@
 /*991 и меньше */
 @media only screen and (max-width: 991px) {
   header {
-    height: 214px;
+    height: 224px;
   }
   .menu-top-wrap,
   .menu-bottom-wrap {
@@ -412,6 +412,9 @@
   }
   .social li {
     margin: 0 10px;
+  }
+  .breadcrumb-wrapper {
+    display: none;
   }
   .youtube-news::after {
     width: 40px;
