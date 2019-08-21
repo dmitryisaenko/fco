@@ -418,7 +418,7 @@ main {
 /* ==================================== */
 .news-block {
   max-width: 1190px;
-  width: 95%;
+  width: 100%;
   margin: 36px auto 0px;
 }
 .news-block h2.block-title {
@@ -427,6 +427,7 @@ main {
   text-transform: uppercase;
   border-bottom: 2px solid #e8eaef;
   padding-bottom: 15px;
+  margin-left: 15px;
   margin-bottom: 20px;
   position: relative;
   font-weight: 300;
@@ -500,6 +501,11 @@ main {
 }
 /* -------------------- */
 /* Header for news-page */
+#single-news-page {
+  max-width: 1190px;
+  width: 100%;
+  margin: 36px auto 0px;
+}
 #single-news-page .view-news {
   margin-top: -50px;
   margin-bottom: 30px;

@@ -16,6 +16,10 @@
   .shop img {
     max-width: 95%;
   }
+  #single-news-page {
+    width: 95%;
+    margin: 36px 15px;
+  }
 }
 /*1100 и меньше */
 @media only screen and (max-width: 1100px) {
@@ -352,6 +356,33 @@
   }
   .social-block > .field-items > .field-item:nth-child(2n) {
     background: #eef5f8;
+  }
+  .news-item {
+    max-width: 95%;
+  }
+  .view-news-single-page {
+    display: block;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .news-view-filters {
+    margin-top: 35px;
+    margin-left: 0;
+  }
+  #single-news-page .view-news {
+    margin-bottom: 10px;
+  }
+  .news-view-filter-item select {
+    padding: 2px 7px;
+    padding-right: 34px;
+    font-size: 13px;
+  }
+  .news-view-filter-item::before {
+    width: 22px;
+    height: 22px;
+  }
+  .news-block h2.block-title {
+    margin-left: 0;
   }
 }
 /*576 и меньше */
