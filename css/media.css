@@ -384,6 +384,9 @@
   .news-block h2.block-title {
     margin-left: 0;
   }
+  .pagination-wrapper {
+    display: none;
+  }
 }
 /*576 и меньше */
 @media only screen and (max-width: 576px) {

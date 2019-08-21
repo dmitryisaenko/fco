@@ -72,3 +72,156 @@ main {
   text-transform: uppercase;
   font-weight: 500;
 }
+
+
+
+// ----------
+// PAGINATION
+// ----------
+
+.pagination-wrapper{
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.pagination > li {
+  display: inline;
+}
+
+.pagination li span, .pagination li a {
+  font-size: 14px;
+  color: #717378;
+  border: 1px solid #ffc934;
+  background: transparent;
+}
+
+.pagination > li > a, .pagination > li > span {
+  float: left;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  text-decoration: none;
+  color: #337ab7;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  margin-left: 1px;
+    margin-right: 1px;
+}
+
+.pagination li.pager-first a {
+  margin-right: 5px;
+  height: 33px;
+  width: 68px;
+  font-size: 0;
+  border: 1px solid #ffc934;
+  left: auto;
+  right: 0;
+  bottom: 100%;
+  top: auto;
+  z-index: 99;
+  border-radius: 0;
+  background: url(../img/pointslide2.png);
+  background-size: auto 100%;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+}
+
+.pagination li span,
+.pagination li a {
+  font-size: 14px;
+    color: #717378;
+    border: 1px solid #ffc934;
+    background: transparent;
+}
+
+
+.pagination li.prev a {
+  margin-right: 10px;
+  height: 33px;
+  width: 34px;
+  font-size: 0;
+  border: 1px solid #ffc934;
+  left: auto;
+  right: 0;
+  bottom: 100%;
+  top: auto;
+  z-index: 99;
+  border-radius: 0;
+  background: url(../img/pointslide2.png);
+  background-size: 100% 100%;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.pagination li.active span,
+.pagination li.active a {
+  background: #ffc934;
+  color: #717378;
+  border: 1px solid #ffc934;
+  margin: 0 3px;
+}
+
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+  color: #777777;
+  background-color: #ffffff;
+  border-color: #dddddd;
+  cursor: not-allowed;
+}
+
+.pagination li.next a {
+  margin-left: 10px;
+  height: 33px;
+  width: 34px;
+  font-size: 0;
+  border: 1px solid #ffc934;
+  left: auto;
+  right: 0;
+  bottom: 100%;
+  top: auto;
+  z-index: 99;
+  border-radius: 0;
+  background: url(../img/pointslide2.png);
+  background-size: 100% 100%;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.pagination li.pager-last a {
+  margin-left: 5px;
+  height: 33px;
+  width: 68px;
+  font-size: 0;
+  border: 1px solid #ffc934;
+  left: auto;
+  right: 0;
+  bottom: 100%;
+  top: auto;
+  z-index: 99;
+  border-radius: 0;
+  background: url(../img/pointslide2.png);
+  background-size: auto 100%;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
