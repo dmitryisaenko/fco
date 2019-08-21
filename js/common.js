@@ -23,12 +23,13 @@ $(document).ready(function(){
 
 	$toggleButton.on('click', function() {
 		$(this).toggleClass('button-open');
-		$menuWrap.toggleClass('menu-show');
-	});
-
+        $menuWrap.toggleClass('menu-show');
+        console.log($sidebarArrow);
+    });
+    
 	// Sidebar navigation arrows
-
 	$sidebarArrow.click(function() {
+        $sidebarArrow.next().hide(300);
 		$(this).next().slideToggle(300);
 	});
 
