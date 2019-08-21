@@ -594,6 +594,7 @@ main {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   /* flex-wrap: wrap; */
+  margin: 10px 0;
 }
 .news-item {
   padding: 0;
