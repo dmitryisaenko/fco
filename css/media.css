@@ -68,6 +68,9 @@
   .shop img {
     max-width: 90%;
   }
+  .container {
+    max-width: 1070px;
+  }
 }
 /*991 и меньше */
 @media only screen and (max-width: 991px) {
@@ -151,8 +154,16 @@
   .partner-img {
     background-size: 60%;
   }
+  .container {
+    max-width: 970px;
+  }
 }
 /*880 и меньше */
+@media only screen and (max-width: 880px) {
+  .container {
+    max-width: 860px;
+  }
+}
 /*768 и меньше */
 @media only screen and (max-width: 768px) {
   header {
@@ -202,6 +213,29 @@
   .field-name-field-link a {
     font-size: 15px;
     padding: 10px 10px;
+  }
+  .container {
+    max-width: 750px;
+  }
+  .history-point .history-point-wrapper {
+    width: 251px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .history-point .history-point-wrapper .history-point-content {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
+  .history-point .history-point-wrapper .history-point-logo {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -ms-flex-negative: 2;
+        flex-shrink: 2;
+  }
+  .img-responsive {
+    width: 100%;
   }
   /* ==================================== */
   /*		  	  Mobile Navigaton Menu		
