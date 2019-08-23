@@ -31,7 +31,14 @@ $(document).ready(function(){
 	$sidebarArrow.click(function() {
         $sidebarArrow.not(this).next().hide(300);
         $(this).next().slideToggle(300);
-	});
+    });
+    
+    // Отображение полной исторической справки
+    $('.meta-more p').on('click', function() {
+		$(this).parents().find('.history-article-content').toggleClass('hist-open');
+		$(this).toggleClass('meta-more-active');
+		// $(this).css('display', 'inline-block');;
+    });
 
     // Плавный переход между разделами сайта при клике на пункты меню
     $("#menu").on("click","a", function (event) {

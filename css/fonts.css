@@ -8,3 +8,13 @@
 	font-style: normal;
 	font-weight: normal;
 }
+
+@font-face {
+	font-family: "PF Din Text Cond Pro XBlack";
+	src: url("../fonts/PFDinDisplayPro_all/PFDinTextCondPro-XBlack.eot");
+	src: url("../fonts/PFDinDisplayPro_all/PFDinTextCondPro-XBlack.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/PFDinDisplayPro_all/PFDinTextCondPro-XBlack.woff") format("woff"),
+	url("../fonts/PFDinDisplayPro_all/PFDinTextCondPro-XBlack.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

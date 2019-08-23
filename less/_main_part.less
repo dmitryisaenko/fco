@@ -226,13 +226,16 @@ main {
   transform: rotate(180deg);
 }
 
+.main-container{
+  margin-top: 20px;
+}
 .container{
   max-width: 1170px;
   margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-    border: 1px solid red;
+    // border: 1px solid red;
     // height: 100px;
 }
 
@@ -412,4 +415,144 @@ main {
   flex-shrink: 2;
     flex-grow: 0;
     flex-basis: 37%;
+}
+
+.main-content{
+  display: flex;
+  // justify-content: space-between;
+}
+
+.central-content{
+    width: 64%;
+}
+
+.right-content{ 
+    width: 36%;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.history-article-img img{
+  width: 100%;
+  margin-bottom: 35px;
+  border-radius: 5px;
+}
+
+.history-article{
+  display: flex;
+}
+
+.history-article .meta{
+  width: 25%;
+}
+
+.history-article .year{
+  font-size: 36px;
+    color: #ffc934;
+    font-family: 'PF Din Text Cond Pro XBlack';
+    margin-bottom: 10px;
+}
+
+.history-article .meta p {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  color: #717378;
+  text-transform: uppercase;
+  padding: 7px 10px;
+  padding-right: 50px;
+  border: 1px solid #ffc934;
+  height: 34px;
+  cursor: pointer;
+  width: 140px;
+}
+
+.history-article .meta p::before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 32px;
+  right: 0;
+  top: 0;
+  background: url(../img/pointslide2.png);
+  background-size: 100% 100%;
+  transform: rotate(-90deg);
+  border-top: 1px solid #ffc934;
+}
+
+
+// .meta-more:hover .history-article-content{
+//   border: 3px solid red;
+// }
+
+.meta-more-active::before{
+  transform: rotate(90deg)!important;
+  border-bottom: 1px solid #ffc934!important;
+}
+
+.history-article-content{
+  width: 75%;
+    margin-bottom: 40px;
+    height: 120px;
+    overflow: hidden;
+    transition: height 0.1s ease-in-out;
+}
+
+.hist-open{
+  height: auto;
+}
+
+.history-article-content p{
+  font-size: 18px;
+  line-height: 1.4;
+    color: #6E6E77;
+    margin: 0 0 10px;;
+}
+
+.history-article-content p:last-child{
+  margin-bottom: 0;
+}
+
+.right-content{
+  padding: 0px 15px;
+}
+
+.right-content .widget{
+  width: 100%;
+  margin-left: 15px;
+}
+
+.widget-title{
+  color: #27282C;
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+  position: relative;
+  border-bottom: 2px solid #E6E8ED;
+  padding-bottom: 11px;
+  margin-bottom: 17px;
+}
+
+.widget-title::before{
+  position: absolute;
+    content: "";
+    width: 61px;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background: #ffc934;
+}
+
+.widget-body{
+  margin: 0px auto;
+}
+
+.widget-body .info-block-container {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
 }
