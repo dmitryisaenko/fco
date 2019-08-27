@@ -35,7 +35,7 @@ $(document).ready(function(){
     
     // Отображение полной исторической справки
     $('.meta-more p').on('click', function() {
-		$(this).parents().find('.history-article-content').toggleClass('hist-open');
+		$(this).parents().find('.history-article').toggleClass('hist-open');
 		$(this).toggleClass('meta-more-active');
 		// $(this).css('display', 'inline-block');;
     });
