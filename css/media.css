@@ -601,6 +601,11 @@
     width: 100%;
     font-size: 14px;
   }
+  .emblem,
+  .hymn {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .emblem-logo,
   .hymn-logo {
     -ms-flex-preferred-size: 100%;
