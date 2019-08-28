@@ -157,6 +157,15 @@
   .container {
     max-width: 970px;
   }
+  .main-content.symbolics {
+    display: block;
+  }
+  .main-content.symbolics .central-content {
+    width: 100%;
+  }
+  .main-content.symbolics .right-content {
+    width: 100%;
+  }
   .main-header .history-dates,
   .main-header .main-title {
     margin-bottom: 30px;
@@ -592,6 +601,21 @@
     width: 100%;
     font-size: 14px;
   }
+  .emblem-logo,
+  .hymn-logo {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-right: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .emblem-conent,
+  .hymn-conent {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-right: 0px;
+    margin-bottom: 20px;
+  }
 }
 /*400 и меньше */
 @media only screen and (max-width: 400px) {
@@ -619,3 +643,8 @@
   }
 }
 /*320 и меньше */
+@media only screen and (max-width: 320px) {
+  .hymn-conent audio {
+    width: 100%;
+  }
+}
