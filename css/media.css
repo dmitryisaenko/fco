@@ -157,13 +157,13 @@
   .container {
     max-width: 970px;
   }
-  .main-content.symbolics {
+  .main-content.media_991 {
     display: block;
   }
-  .main-content.symbolics .central-content {
+  .main-content.media_991 .central-content {
     width: 100%;
   }
-  .main-content.symbolics .right-content {
+  .main-content.media_991 .right-content {
     width: 100%;
   }
   .main-header .history-dates,
@@ -178,6 +178,12 @@
   }
   .history-article .meta p {
     width: 110px;
+  }
+  .right-content {
+    padding-left: 0px;
+  }
+  .right-content .widget {
+    margin-left: 0px;
   }
 }
 /*880 и меньше */
@@ -279,6 +285,12 @@
   }
   .right-content .widget {
     margin-left: 0px;
+  }
+  .infrastructure-sublogo-item {
+    font-size: 15px;
+  }
+  .infrastructure-content {
+    font-size: 17px;
   }
   /* ==================================== */
   /*		  	  Mobile Navigaton Menu		
@@ -546,6 +558,9 @@
   .footer h2 {
     margin: 0;
   }
+  .main-header .main-title h1 {
+    font-size: 38px;
+  }
   .general-partner {
     width: 100%;
   }
@@ -621,9 +636,42 @@
     padding-right: 0px;
     margin-bottom: 20px;
   }
+  .emblem img,
+  .hymn img {
+    max-width: 190px;
+  }
+  .emblem-conent p,
+  .hymn-conent p {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .infrastructure-title {
+    font-size: 16px;
+  }
+  .infrastructure-sublogo {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .infrastructure-sublogo-item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .infrastructure-sublogo-item:nth-child(2n-1) {
+    background: #fbfbfd;
+  }
+  .infrastructure-sublogo-item:first-child,
+  .infrastructure-sublogo-item:last-child {
+    background: #EEF5F8;
+  }
+  .infrastructure-content {
+    font-size: 15px;
+  }
 }
 /*400 и меньше */
 @media only screen and (max-width: 400px) {
+  .main-header .main-title h1 {
+    font-size: 25px;
+  }
   .sponsor img {
     display: none;
   }
@@ -643,8 +691,26 @@
   .history-article .meta .meta-more {
     width: 100%;
   }
+  .emblem-conent p,
+  .hymn-conent p {
+    font-size: 14px;
+    line-height: 1.3;
+  }
   .history-article .meta .year {
     width: 100%;
+  }
+  .infrastructure-title {
+    font-size: 14px;
+  }
+  .infrastructure-sublogo-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .infrastructure-sublogo-item:nth-child(3) {
+    background: #EEF5F8;
+  }
+  .infrastructure-sublogo-item:last-child {
+    background: #fbfbfd;
   }
 }
 /*320 и меньше */
