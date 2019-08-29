@@ -292,6 +292,21 @@
   .infrastructure-content {
     font-size: 17px;
   }
+  .leadership-img {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .leadership-main {
+    width: 100%;
+  }
+  .leadership-content:first-child {
+    height: 281px;
+  }
   /* ==================================== */
   /*		  	  Mobile Navigaton Menu		
 /* ==================================== */
