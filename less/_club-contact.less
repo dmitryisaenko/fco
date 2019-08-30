@@ -1,0 +1,60 @@
+.contact-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 111px;
+    padding-left: 185px;
+    position: relative;
+    margin-bottom: 10px;
+    background: #FFFFFF;
+}
+
+
+.contact-title{
+    flex-basis: 100px;
+    flex-grow: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #27282C;
+    text-transform: uppercase;
+}
+
+.contact-title-addres::before,
+.contact-title-phone::before,
+.contact-title-fax::before,
+.contact-title-mail::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 165px;
+    height: 111px;
+    background: url(/img/kontaksprite.png);
+}
+
+.contact-title-phone::before{
+    background-position: -172px 0;
+}
+
+.contact-title-fax::before{
+    background-position: -344px 0;
+}
+
+.contact-title-mail::before{
+    background-position: -515px 0;
+}
+
+.contact-content{
+    flex-grow: 1;
+    flex-basis: 0;
+    font-size: 18px;
+    color: #6E6E77;
+    padding-right: 73px;
+}
+
+.map{
+    width: 100%;
+    height: 450px;
+    margin-bottom: 30px;
+}
