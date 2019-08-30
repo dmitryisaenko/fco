@@ -1570,6 +1570,23 @@ main {
   color: #337ab7!important;
   text-decoration: none;
 }
+.zvit-content {
+  font-size: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 30px;
+}
+.zvit-download {
+  overflow: hidden;
+}
+.zvit-download img {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.zvit-download a {
+  color: #337ab7;
+  text-decoration: none;
+  font-size: 14px;
+}
 /* ==================================== */
 /*		  	  Footer		
 /* ==================================== */

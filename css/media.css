@@ -555,8 +555,14 @@
   .social li {
     margin: 0 10px;
   }
-  .breadcrumb-wrapper {
-    display: none;
+  .breadcrumb {
+    padding: 3px 12px 6px;
+    line-height: 1;
+    margin-top: 10px;
+  }
+  .breadcrumb-wrapper .breadcrumb a,
+  .breadcrumb-wrapper .breadcrumb span {
+    font-size: 12px;
   }
   .youtube-news::after {
     width: 40px;
@@ -752,5 +758,13 @@
 @media only screen and (max-width: 320px) {
   .hymn-conent audio {
     width: 100%;
+  }
+  .breadcrumb {
+    padding: 1px 12px 6px;
+    line-height: 1;
+  }
+  .breadcrumb-wrapper .breadcrumb a,
+  .breadcrumb-wrapper .breadcrumb span {
+    font-size: 10px;
   }
 }
