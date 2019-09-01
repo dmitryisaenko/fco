@@ -67,3 +67,90 @@ h1.page-header::before{
 .team-header ul li a.active{
     background: #ffc934;
 }
+
+.team-block{
+    width: 100%;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+}
+
+.team-block-title{
+    padding: 0;
+}
+
+.team-block-title h3{
+    font-size: 36px;
+    font-weight: bold;
+    color: #B8BEC0;
+    text-transform: uppercase;
+    margin-top: 130px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+.team-block-items-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team-block-item{
+    margin-bottom: 24px;
+}
+
+.team-block-item-img{
+    background: url(/img/bgitems.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.team-block-item-img img {
+    width: 233px;
+    padding-top: 15px;
+}
+
+.team-block-item-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin-right: 0;
+}
+
+.team-block-item-content-fio-wrapper{
+    // padding-left: 34px;
+}
+
+.team-block-item-content-name{
+    font-size: 16px;
+    color: #B8BEC0;
+    font-weight: bold;
+}
+
+.team-block-item-content-familyname{
+    font-size: 21px;
+    font-weight: bold;
+    color: #27282C;
+}
+
+.team-block-item-content-number{
+    font-size: 60px;
+    color: #FFC934;
+    font-family: 'PF Din Text Cond Pro XBlack';
+    font-weight: 900;
+    position: relative;
+}
+
+.team-block-item-content-number::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 74px;
+    height: 74px;
+    background: url(/img/pointers.png) no-repeat;
+    background-size: 100%;
+    z-index: -1;
+}
