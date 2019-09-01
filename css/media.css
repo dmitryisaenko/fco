@@ -700,6 +700,12 @@
   .infrastructure-content {
     font-size: 15px;
   }
+  .team-header {
+    margin-top: 0;
+  }
+  .team-header ul {
+    text-align: center;
+  }
 }
 /*400 и меньше */
 @media only screen and (max-width: 400px) {
@@ -752,6 +758,11 @@
   }
   .press-atashe-content {
     width: 100%;
+  }
+  .team-header ul li {
+    display: block;
+    width: 30%;
+    margin: 5px auto;
   }
 }
 /*320 и меньше */
