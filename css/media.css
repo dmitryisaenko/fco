@@ -195,6 +195,9 @@
   .team-block-title h3 {
     margin-top: -10px;
   }
+  .non-players {
+    width: 31%;
+  }
 }
 /*880 и меньше */
 @media only screen and (max-width: 880px) {
@@ -747,6 +750,9 @@
   .team-block-title h3 {
     font-size: 31px;
   }
+  .team-block-item-img img {
+    width: 233px;
+  }
 }
 /*400 и меньше */
 @media only screen and (max-width: 400px) {
@@ -804,6 +810,7 @@
     display: block;
     width: 30%;
     margin: 5px auto;
+    min-width: 100px;
   }
   .team-block-title h3 {
     font-size: 28px;
