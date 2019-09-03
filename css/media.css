@@ -20,6 +20,18 @@
     width: 95%;
     margin: 36px 15px;
   }
+  .team-single-header-content p.birthday {
+    margin-top: 10px;
+  }
+  .team-single-header-content p.civil-title {
+    margin-top: 10px;
+  }
+  .team-single-header-content p.surname {
+    font-size: 56px;
+  }
+  .team-single-header-img img {
+    height: 309px;
+  }
 }
 /*1100 и меньше */
 @media only screen and (max-width: 1100px) {
@@ -197,6 +209,27 @@
   }
   .non-players {
     width: 31%;
+  }
+  .team-single-header {
+    background: transparent;
+  }
+  .team-single-header-content {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+  .team-single-header-img {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .team-single-header-content p.name,
+  .team-single-header-content p.birthday,
+  .team-single-header-content p.civil-title {
+    color: #ffc934;
+  }
+  .team-single-header-content p.surname {
+    font-size: 42px;
   }
 }
 /*880 и меньше */

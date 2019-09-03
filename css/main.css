@@ -447,6 +447,7 @@ main {
   margin: 0px auto 20px;
   padding: 8px 15px;
   list-style: none;
+  overflow: hidden;
 }
 .breadcrumb-wrapper .breadcrumb a,
 .breadcrumb-wrapper .breadcrumb span {
@@ -1802,7 +1803,7 @@ h1.page-header::before {
       -ms-flex-align: center;
           align-items: center;
   background: url(/img/openbg.jpg);
-  background-size: 100%;
+  background-repeat-y: no-repeat;
 }
 .team-single-header-content {
   padding-left: 60px;
@@ -1858,6 +1859,7 @@ h1.page-header::before {
   height: 380px;
   display: inline-block;
   margin-top: 20px;
+  margin-bottom: -3px;
 }
 .team-single-header-nav_perv {
   position: absolute;
@@ -1884,6 +1886,16 @@ h1.page-header::before {
   font-size: 0;
   background: url(/img/pointslide.png);
   background-size: 100% 100%;
+}
+.team-single-subheader {
+  background: #27282C;
+  padding: 20px 0;
+  margin-bottom: 36px;
+}
+.team-central-content {
+  line-height: 1.42857143;
+  color: #333333;
+  font-size: 18px;
 }
 /* ==================================== */
 /*		  	  Footer		
