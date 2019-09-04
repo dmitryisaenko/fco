@@ -1850,6 +1850,7 @@ h1.page-header::before {
   color: #27282C;
 }
 .team-single-header-img {
+  position: relative;
   -ms-flex-preferred-size: 39%;
       flex-basis: 39%;
   text-align: center;
@@ -1896,6 +1897,14 @@ h1.page-header::before {
   line-height: 1.42857143;
   color: #333333;
   font-size: 18px;
+}
+.team-single-header .players-number {
+  position: absolute;
+  right: -10px;
+  top: 50px;
+  font-size: 120px;
+  color: #ffc934;
+  font-family: 'PF Din Text Cond Pro XBlack';
 }
 /* ==================================== */
 /*		  	  Footer		

@@ -32,6 +32,10 @@
   .team-single-header-img img {
     height: 309px;
   }
+  .team-single-header .players-number {
+    font-size: 83px;
+    right: 40px;
+  }
 }
 /*1100 и меньше */
 @media only screen and (max-width: 1100px) {
