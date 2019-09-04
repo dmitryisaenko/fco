@@ -1888,11 +1888,6 @@ h1.page-header::before {
   background: url(/img/pointslide.png);
   background-size: 100% 100%;
 }
-.team-single-subheader {
-  background: #27282C;
-  padding: 20px 0;
-  margin-bottom: 36px;
-}
 .team-central-content {
   line-height: 1.42857143;
   color: #333333;
@@ -1905,6 +1900,83 @@ h1.page-header::before {
   font-size: 120px;
   color: #ffc934;
   font-family: 'PF Din Text Cond Pro XBlack';
+}
+.team-single-subheader {
+  background: #27282C;
+  padding: 20px 0;
+  margin-bottom: 36px;
+}
+.team-single-subheader-top,
+.team-single-subheader-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffc934;
+  padding: 0 63px;
+}
+.team-single-subheader-bottom {
+  color: #fff;
+}
+.team-single-subheader-top h3,
+.team-single-subheader-bottom h3 {
+  font-size: 15px;
+  color: #6E6E77;
+  font-weight: 300;
+  text-transform: uppercase;
+  -ms-flex-preferred-size: 141px;
+      flex-basis: 141px;
+}
+.team-single-subheader-top div,
+.team-single-subheader-bottom div {
+  width: 34px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.team-single-subheader-middle-wrap {
+  padding: 10px 0;
+  position: relative;
+}
+.team-single-subheader-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #Fff;
+  padding: 0 63px;
+  padding-left: 256px;
+}
+.team-single-subheader-middle::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  left: 0;
+  top: 50%;
+  margin-top: -1.5px;
+  background: #6E6E77;
+}
+.team-single-subheader-middle div {
+  width: 34px;
+  height: 34px;
+  background: #6E6E77;
+  border-radius: 50%;
+  position: relative;
 }
 /* ==================================== */
 /*		  	  Footer		
