@@ -479,3 +479,52 @@ h1.page-header::before{
     margin-top: -10px;
     background-position: -295px -32px;
 }
+
+// **********************
+// Widgets
+// **********************
+.widget-title-players-list::before{
+    width: 147px;
+  }
+  
+  .widget-body-players-list h3{
+    padding: 13px 18px;
+    margin: 0;
+      font-size: 17px !important;
+      color: #6E6E77;
+      font-weight: bold;
+      text-transform: uppercase;
+      position: relative;
+      transition: all 0.1s linear;
+  }
+  
+  .widget-body-players-list h3::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 94px;
+    height: 100%;
+    background: url(/img/spritesmall.png);
+    background-position: -94px 0px;
+    transition: all 0.1s linear;
+  }
+
+  .players-list-block{
+      background: #EEF5F8;
+
+  }
+
+  .players-list-block a{
+      margin: 0;
+      font-size: 17px;
+    color: #6E6E77;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    padding: 8.5px 0;
+    height: 40px;
+    padding-left: 56px;
+    position: relative;
+    background: transparent;
+  }

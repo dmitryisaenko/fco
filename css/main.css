@@ -689,16 +689,23 @@ main {
   width: 100%;
   margin-left: 15px;
 }
+.widget {
+  margin-bottom: 25px;
+}
 .widget-title {
-  color: #27282C;
+  color: #6E6E77;
   font-size: 19px;
-  font-weight: 600;
+  font-weight: 300;
   margin: 0;
   text-transform: uppercase;
   position: relative;
   border-bottom: 2px solid #E6E8ED;
   padding-bottom: 11px;
   margin-bottom: 17px;
+}
+.widget-title span {
+  font-weight: bold;
+  color: #27282C;
 }
 .widget-title::before {
   position: absolute;
@@ -2047,6 +2054,48 @@ h1.page-header::before {
   margin-left: -8px;
   margin-top: -10px;
   background-position: -295px -32px;
+}
+.widget-title-players-list::before {
+  width: 147px;
+}
+.widget-body-players-list h3 {
+  padding: 13px 18px;
+  margin: 0;
+  font-size: 17px !important;
+  color: #6E6E77;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.widget-body-players-list h3::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 94px;
+  height: 100%;
+  background: url(/img/spritesmall.png);
+  background-position: -94px 0px;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.players-list-block {
+  background: #EEF5F8;
+}
+.players-list-block a {
+  margin: 0;
+  font-size: 17px;
+  color: #6E6E77;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  padding: 8.5px 0;
+  height: 40px;
+  padding-left: 56px;
+  position: relative;
+  background: transparent;
 }
 /* ==================================== */
 /*		  	  Footer		
