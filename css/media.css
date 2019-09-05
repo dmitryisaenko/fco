@@ -36,6 +36,12 @@
     font-size: 83px;
     right: 40px;
   }
+  .team-container {
+    max-width: 940px!important;
+  }
+  .team-single-subheader-middle {
+    padding-left: 238px;
+  }
 }
 /*1100 и меньше */
 @media only screen and (max-width: 1100px) {
@@ -201,6 +207,9 @@
   .right-content .widget {
     margin-left: 0px;
   }
+  .team-container {
+    max-width: 750px!important;
+  }
   .team-block {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -234,6 +243,71 @@
   }
   .team-single-header-content p.surname {
     font-size: 42px;
+  }
+  .team-single-subheader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team-single-subheader-top,
+  .team-single-subheader-middle,
+  .team-single-subheader-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    width: 20%;
+  }
+  .team-single-subheader-top h3,
+  .team-single-subheader-bottom h3 {
+    font-size: 14px;
+    -ms-flex-preferred-size: 30px;
+        flex-basis: 30px;
+  }
+  .team-single-subheader-top div,
+  .team-single-subheader-bottom div {
+    height: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .team-single-subheader-middle-wrap {
+    padding: 0;
+    padding-right: 25px;
+  }
+  .team-single-subheader-middle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    position: relative;
+    padding-top: 31px;
+  }
+  .team-single-subheader-middle::before {
+    content: none;
+  }
+  .team-single-subheader-middle div {
+    padding: 0;
+    margin-bottom: 9px;
+  }
+  .team-single-subheader-middle div::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    margin-left: -50px;
+    height: 3px;
+    left: 50%;
+    top: 50%;
+    margin-top: -1.5px;
+    background: #6E6E77;
+    z-index: 1;
   }
 }
 /*880 и меньше */
@@ -851,6 +925,13 @@
   }
   .team-block-title h3 {
     font-size: 28px;
+  }
+  .team-single-subheader-top h3,
+  .team-single-subheader-bottom h3 {
+    font-size: 12px;
+  }
+  .team-single-subheader-middle-wrap {
+    padding-left: 10px;
   }
 }
 /*320 и меньше */
