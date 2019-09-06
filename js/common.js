@@ -14,7 +14,7 @@ $(document).ready(function(){
     
 
 
-    // Скрытие/отображение пунктов меню для моб. версии
+    // Скрытие/отображение меню для моб. версии
     var $toggleButton = $('.toggle-button'),
     	$menuWrap = $('.menu-wrap'),
     	$sidebarArrow = $('.sidebar-menu-arrow');
@@ -38,6 +38,15 @@ $(document).ready(function(){
 		$(this).parents().find('.history-article').toggleClass('hist-open');
 		$(this).toggleClass('meta-more-active');
 		// $(this).css('display', 'inline-block');;
+    });
+
+    //Скрытые/отображение списка игроков в виджете на странице Команда
+    $playersList = $('h3.widget-body-players-list-title');
+    $playersList.click(function() {
+        $playersList.not(this).next().hide(300);
+        $(this).next().slideToggle(300);
+        $playersList.not(this).removeClass('special');
+        $(this).toggleClass('special');
     });
 
     // Плавный переход между разделами сайта при клике на пункты меню

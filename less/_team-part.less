@@ -495,6 +495,7 @@ h1.page-header::before{
       font-weight: bold;
       text-transform: uppercase;
       position: relative;
+      padding: 18px 18px;
       transition: all 0.1s linear;
   }
   
@@ -503,16 +504,21 @@ h1.page-header::before{
     content: "";
     top: 0;
     right: 0;
-    width: 94px;
+    width: 0;
     height: 100%;
     background: url(/img/spritesmall.png);
+    background-position: 0px 0px;
+    transition: all 0.3s linear;
+  }
+
+  .widget-body-players-list-title.special::before{
     background-position: -94px 0px;
-    transition: all 0.1s linear;
+    width: 94px;
   }
 
   .players-list-block{
       background: #EEF5F8;
-
+    display: none;
   }
 
   .players-list-block a{
