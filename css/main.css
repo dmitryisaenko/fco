@@ -67,6 +67,10 @@ nav {
 .w33 {
   width: 33.333333%;
 }
+.opacity_none {
+  opacity: 1!important;
+  z-index: 10!important;
+}
 /*-----------------ВОЗВРАТ К ВЕРХУ----------------------*/
 #back-top {
   background: url(../img/pointup.png);
@@ -2054,6 +2058,43 @@ h1.page-header::before {
   margin-left: -8px;
   margin-top: -10px;
   background-position: -295px -32px;
+}
+.team-single-subheader-middle div span {
+  bottom: -58px;
+  position: absolute;
+  color: #6E6E77;
+  background: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 126px;
+  margin-right: -63px;
+  right: 50%;
+  opacity: 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.team-single-subheader-middle div:nth-child(1) span,
+.team-single-subheader-middle div:nth-child(2) span,
+.team-single-subheader-middle div:nth-child(4) span,
+.team-single-subheader-middle div:nth-child(5) span {
+  bottom: -42px;
+}
+.team-single-subheader-middle div:nth-child(2) span {
+  bottom: -75px;
+}
+.team-single-subheader-middle div span::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 24px;
+  top: -18px;
+  left: 50%;
+  margin-left: -17.5px;
+  background: url(/img/infopoint.png);
 }
 .widget-title-players-list::before {
   width: 147px;

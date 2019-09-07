@@ -49,6 +49,13 @@ $(document).ready(function(){
         $(this).toggleClass('special');
     });
 
+    //Отображение подсказки при клике по-достижениям игрока
+    $playerItem = $('.team-single-subheader-middle div');
+    $playerItem.click(function() {
+        $(this).find('span').toggleClass('opacity_none');
+        $playerItem.not(this).find('span').removeClass('opacity_none');
+    });
+
     // Плавный переход между разделами сайта при клике на пункты меню
     $("#menu").on("click","a", function (event) {
         event.preventDefault();
