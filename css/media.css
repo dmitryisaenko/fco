@@ -42,6 +42,9 @@
   .team-single-subheader-middle {
     padding-left: 238px;
   }
+  .team-single-subheader-middle-goalkeepers {
+    padding-left: 260px;
+  }
 }
 /*1100 и меньше */
 @media only screen and (max-width: 1100px) {
