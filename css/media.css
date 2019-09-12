@@ -314,6 +314,9 @@
     width: 250px;
     margin-top: 15px;
   }
+  .central-content-news-single {
+    margin-bottom: 30px;
+  }
 }
 /*880 и меньше */
 @media only screen and (max-width: 880px) {
@@ -450,6 +453,9 @@
   .team-block-item-content-number::after {
     width: 64px;
     height: 60px;
+  }
+  .news-single-header {
+    margin-bottom: 0px;
   }
   .news-single-subheader {
     position: relative;
@@ -967,6 +973,10 @@
   }
   .team-single-subheader-middle-wrap {
     padding-left: 10px;
+  }
+  .news-single-subheader {
+    padding: 10px;
+    margin-bottom: 15px;
   }
   .news-single-subheader-title h1 {
     font-size: 21px;

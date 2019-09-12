@@ -42,6 +42,9 @@ footer {
   padding-left: 58px;
   position: relative;
 }
+.field-name-field-link:hover{
+  background-color: #ffc934;
+}
 .social-block > .field-items > div .field-name-field-link::before {
   position: absolute;
   content: "";

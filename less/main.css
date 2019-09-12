@@ -432,7 +432,7 @@ main {
   text-transform: uppercase;
   border-bottom: 2px solid #e8eaef;
   padding-bottom: 15px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   position: relative;
   font-weight: 300;
   color: #717378;
