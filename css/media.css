@@ -17,8 +17,8 @@
     max-width: 95%;
   }
   #single-news-page {
-    width: 95%;
-    margin: 36px 15px;
+    width: 98%;
+    margin: 36px 4px;
   }
   .team-single-header-content p.birthday {
     margin-top: 10px;
@@ -129,17 +129,6 @@
   }
   ul.sub-menu a {
     padding: 14px;
-  }
-  .news-container {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .news-item {
-    max-width: 40%;
-    margin: 15px 0px;
   }
   .social-block .field-items {
     -ms-flex-wrap: wrap;
@@ -312,6 +301,19 @@
     background: #6E6E77;
     z-index: 1;
   }
+  .news-single-subheader {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news-single-subheader-title {
+    width: 100%;
+  }
+  .news-single-subheader-info {
+    width: 250px;
+    margin-top: 15px;
+  }
 }
 /*880 и меньше */
 @media only screen and (max-width: 880px) {
@@ -353,8 +355,7 @@
     height: 250px;
   }
   .news-item {
-    max-width: 80%;
-    margin: 10px 0px;
+    width: 48%;
   }
   .news-item-meta {
     font-size: 12px;
@@ -449,6 +450,28 @@
   .team-block-item-content-number::after {
     width: 64px;
     height: 60px;
+  }
+  .news-single-subheader {
+    position: relative;
+  }
+  .news-single-subheader-title h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #27282C;
+    text-shadow: none;
+  }
+  .news-single-subheader-info {
+    margin-bottom: 0px;
+  }
+  .news-single-subheader-info .bottom-line a.facebook_icon::before {
+    width: 11px;
+    height: 28px;
+    background-position: -128px 0px;
+  }
+  .news-single-subheader-info .bottom-line a.twitter_icon::before {
+    background-position: -146px 0px;
+    width: 26px;
+    height: 28px;
   }
   /* ==================================== */
   /*		  	  Mobile Navigaton Menu		
@@ -593,6 +616,9 @@
 }
 /*621 и меньше */
 @media only screen and (max-width: 621px) {
+  .social-block {
+    margin-top: -33px;
+  }
   .social-block > .field-items > .field-item {
     width: 54%;
     padding: 30px 24px;
@@ -604,13 +630,9 @@
   .social-block > .field-items > .field-item:nth-child(2n) {
     background: #eef5f8;
   }
-  .news-item {
-    max-width: 95%;
-  }
-  .view-news-single-page {
-    display: block;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .view-numbers-of-news {
+    top: 33px;
+    right: 5px;
   }
   .news-view-filters {
     margin-top: 35px;
@@ -620,16 +642,13 @@
     margin-bottom: 10px;
   }
   .news-view-filter-item select {
-    padding: 3px 7px;
-    padding-right: 34px;
+    padding: 4px 18px;
+    padding-right: 41px;
     font-size: 13px;
   }
   .news-view-filter-item::before {
     width: 22px;
     height: 22px;
-  }
-  .news-block h2.block-title {
-    margin-left: 0;
   }
   .pagination-wrapper {
     display: none;
@@ -716,23 +735,14 @@
   .breadcrumb-wrapper .breadcrumb span {
     font-size: 12px;
   }
-  .youtube-news::after {
-    width: 40px;
-    height: 40px;
-    margin-top: -20px;
-    margin-left: -20px;
-  }
   .youtube-news:hover::after {
-    width: 60px;
-    height: 60px;
-    margin-top: -30px;
-    margin-left: -30px;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
   }
   .news-item-meta {
     font-size: 13px;
-  }
-  .news-item-title span a {
-    font-size: 16px;
   }
   .footer {
     -ms-flex-wrap: wrap;
@@ -778,6 +788,9 @@
   }
   .history-article .year {
     font-size: 26px;
+  }
+  .news-item {
+    width: 100%;
   }
   .history-article .meta .meta-more p {
     margin: auto;
@@ -883,6 +896,25 @@
   .general-partner-img {
     width: 100%;
   }
+  .view-news-single-page,
+  .news-view-filters {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news-view-filters {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .news-view-filter-item {
+    width: 110px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-top: 9px;
+  }
   .history-article .meta {
     display: block;
     text-align: center;
@@ -935,6 +967,16 @@
   }
   .team-single-subheader-middle-wrap {
     padding-left: 10px;
+  }
+  .news-single-subheader-title h1 {
+    font-size: 21px;
+  }
+  .news-single-subheader-info {
+    width: 200px;
+  }
+  .news-single-subheader-info-date,
+  .news-single-subheader-info-news_title {
+    font-size: 11px;
   }
 }
 /*320 и меньше */
