@@ -956,6 +956,7 @@ main {
   background: url(../img/youtube-button.png);
   background-size: 100% 100%;
   cursor: pointer;
+  opacity: 0.75;
 }
 .youtube-news:hover::after {
   width: 80px;
@@ -1051,6 +1052,8 @@ main {
 }
 .news-single-subheader-title {
   width: 70%;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .news-single-subheader-title h1 {
   font-size: 32px;
@@ -1136,6 +1139,27 @@ main {
   height: 20px;
   left: 45%;
 }
+.news-single-subheader-media-item {
+  position: relative;
+  padding: 30px 50px 0px;
+}
+.news-single-subheader-title-media-item h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #27282C;
+  text-shadow: none;
+}
+.news-single-subheader-info .bottom-line a.facebook_icon-media-item::before {
+  background-position: -128px 0px;
+  width: 15px;
+  height: 20px;
+  margin-top: -7px;
+}
+.news-single-subheader-info .bottom-line a.twitter_icon-media-item::before {
+  background-position: -146px 0px;
+  width: 26px;
+  height: 28px;
+}
 .central-content-news-single img {
   height: auto;
 }
@@ -1153,6 +1177,9 @@ main {
   display: block;
   text-decoration: none;
   display: inline-block;
+}
+.slick-slide {
+  margin: 0 20px!important;
 }
 .main-header .history-dates {
   position: relative;
