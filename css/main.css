@@ -1178,8 +1178,9 @@ main {
   text-decoration: none;
   display: inline-block;
 }
-.slick-slide {
-  margin: 0 20px!important;
+.slider-nav {
+  width: 97%;
+  margin: 10px auto;
 }
 .main-header .history-dates {
   position: relative;
