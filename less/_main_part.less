@@ -22,29 +22,117 @@ main {
   }
   
   .info-block-wrap {
-    max-width: 1190px;
-    margin:   auto;
+    
   }
   
   .info-block {
+    max-width: 1190px;
+    margin: auto;
+    // padding: 0 1%;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
   
   .info-block-container,
   .info-table {
-    min-width: 350px;
-    width: 30%;
-    max-width: 90%;
-    height: 200px;
+    // min-width: 350px;
+    // width: 31%;
+    flex-grow: 1;
+    // max-width: 90%;
+    height: 250px;
+    
+    margin: 15px 1%;
+    border-top: 2px solid #0B56A4;
+    margin-bottom: 2rem;
+  }
+
+  .info-block__header{
+    padding: 1rem 1.5rem 1.5rem;
+  }
+
+  .info-block__header h3{
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  .info-block__body{
     padding: 1rem;
     border-radius: 3px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     background: #fff;
-    margin: 15px 0px;
+    height: 100%;
   }
+
+  .info-block__logo{
+    margin-bottom: 1rem;
+    min-height: 3.7rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-block__logo-img{
+    background: url(https://www.lcfc.com/resources/ver/i/sprites/global-sprite.png) -930px -1268px no-repeat;
+    width: 170px;
+    height: 28px;
+    background-size: 1522px 1420px;
+  }
+
+  .info-block__meta{
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .info-block__date{
+    font-weight: 800;
+    margin-right: .4rem;
+  }
+
+  .info-block__stadium{
+    color: #737373;
+  }
+
+  .info-block__kickoff-container{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  .info-block_team-container{
+    width: 50%;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .info-block_team-container:first-child{
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 1rem;
+  }
+
+  .info-block_team-container:last-child{
+    padding-left: 1rem;
+  }
+
+  .info-block__score{
+    font-size: 1.8rem;
+    color: #fff;
+    display: flex;
+  }
+
+  .info-block__btn-container{
+
+  }
+
+
   .shop {
     width: 100%;
   }
