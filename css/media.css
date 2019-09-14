@@ -739,12 +739,6 @@
   .breadcrumb-wrapper .breadcrumb span {
     font-size: 12px;
   }
-  .youtube-news:hover::after {
-    width: 100px;
-    height: 100px;
-    margin-top: -50px;
-    margin-left: -50px;
-  }
   .news-item-meta {
     font-size: 13px;
   }
@@ -886,6 +880,10 @@
   }
   .team-block-item-img img {
     width: 233px;
+  }
+  .central-content p {
+    font-size: 14px;
+    color: #333;
   }
 }
 /*400 и меньше */

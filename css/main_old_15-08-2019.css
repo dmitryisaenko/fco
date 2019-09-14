@@ -619,7 +619,7 @@ main {
   cursor: pointer;
 }
 
-.youtube-news:hover::after {
+.youtube-news:hover::before {
   width: 80px;
   height: 80px;
   margin-top: -40px;
