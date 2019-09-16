@@ -91,6 +91,25 @@ nav {
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
+.btn {
+  line-height: 1.2;
+  padding: 1.2rem 2rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #0B56A4;
+  font-weight: 800;
+  -webkit-transition: .2s;
+  transition: .2s;
+  text-align: center;
+  position: relative;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  border-radius: 3px;
+}
 /* ==================================== */
 /*		  	  Header		
 /* ==================================== */
@@ -425,7 +444,6 @@ main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  height: 250px;
   margin: 15px 1%;
   border-top: 2px solid #0B56A4;
   margin-bottom: 2rem;
@@ -447,7 +465,6 @@ main {
 }
 .info-block__logo {
   margin-bottom: 1rem;
-  min-height: 3.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,11 +472,14 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.info-block__logo-img {
-  background: url(https://www.lcfc.com/resources/ver/i/sprites/global-sprite.png) -930px -1268px no-repeat;
-  width: 170px;
-  height: 28px;
-  background-size: 1522px 1420px;
+.info-block__logo--tur {
+  text-align: right;
+  margin-right: 7px;
+  color: #737373;
+}
+.info-block__logo img {
+  width: 166px;
+  height: 40px;
 }
 .info-block__meta {
   text-align: center;
@@ -479,12 +499,12 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
-.info-block_team-container {
+.info-block__team-container {
   width: 50%;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 19px;
   font-weight: 800;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -493,15 +513,42 @@ main {
   -ms-flex-align: center;
   align-items: center;
 }
-.info-block_team-container:first-child {
+.info-block__team-container:first-child {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   text-align: right;
   padding-right: 1rem;
 }
-.info-block_team-container:last-child {
+.info-block__team-container:last-child {
   padding-left: 1rem;
+}
+.info-block__team-title {
+  padding-right: 0.5rem;
+  font-weight: 100;
+}
+.info-block__team-title--home {
+  padding-right: 0.5rem;
+}
+.info-block__team-title--away {
+  padding-left: 0.5rem;
+}
+.info-block__team-img {
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  display: block;
+  background-size: 475px 435px;
+  background-image: url(https://www.lcfc.com/resources/ver/i/sprites/badges-35-sprite.png);
+  background-position: -440px -360px;
+}
+.info-block__team-img.t1 {
+  background-image: url(https://www.lcfc.com/resources/ver/i/sprites/badges-35-sprite@x2.png);
+  background-position: -240px -320px;
+}
+.info-block__team-img.t13 {
+  background-image: url(https://www.lcfc.com/resources/ver/i/sprites/badges-35-sprite@x2.png);
+  background-position: -320px 0px;
 }
 .info-block__score {
   font-size: 1.8rem;
@@ -509,6 +556,52 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.info-block__score span {
+  position: relative;
+  width: 3.5rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#152638), color-stop(50%, #324150), color-stop(50%, #061729));
+  background: linear-gradient(#152638, #324150 50%, #061729 50%);
+}
+.info-block__score span:first-child {
+  border-right: 1px solid #061729;
+}
+.info-block__btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.info-block__btn {
+  width: 50%;
+  margin: 0 .5rem;
+}
+.info-block__btn--single {
+  margin: auto;
+}
+.info-block__btn .icon {
+  margin-left: 0;
+  margin-right: .5rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+.info-block__btn-container span::before {
+  font-family: FontAwesome;
+  content: "\f1e3";
+  padding-right: 13px;
 }
 .shop {
   width: 100%;
