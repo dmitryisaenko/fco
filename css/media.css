@@ -316,6 +316,9 @@
     background: #6E6E77;
     z-index: 1;
   }
+  .team-header__matches-standings {
+    margin-top: 0;
+  }
   .news-single-subheader {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -454,6 +457,9 @@
   }
   .leadership-content:first-child {
     height: 281px;
+  }
+  h1.page-header {
+    margin: 20px 0;
   }
   .team-block-item-content-fio-wrapper {
     padding-left: 7px;
@@ -911,6 +917,12 @@
   .team-block-item-img img {
     width: 233px;
   }
+  .team-header__matches-standings ul li {
+    display: block;
+    width: 35%;
+    margin: 5px auto;
+    min-width: 180px;
+  }
   .central-content p {
     font-size: 14px;
     color: #333;
@@ -992,6 +1004,12 @@
     width: 30%;
     margin: 5px auto;
     min-width: 100px;
+  }
+  .team-header__matches-standings ul li {
+    display: block;
+    width: 35%;
+    margin: 5px auto;
+    min-width: 180px;
   }
   .team-block-title h3 {
     font-size: 28px;

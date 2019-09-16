@@ -2093,6 +2093,9 @@ h1.page-header::before {
   height: 3px;
   background: #ffc934;
 }
+h1.page-header span {
+  font-weight: 50;
+}
 .team-header {
   margin-bottom: 20px;
   margin-top: -54px;
@@ -2107,6 +2110,16 @@ h1.page-header::before {
   background: #FBFBFD;
   height: 10px;
   width: 293px;
+  z-index: -1;
+}
+.team-header__matches-standings ul::before {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  height: 6px;
+  width: 505px;
+  right: 0;
+  background: #FBFBFD;
   z-index: -1;
 }
 .team-header ul {
