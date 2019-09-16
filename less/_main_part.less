@@ -39,8 +39,9 @@ main {
     // max-width: 90%;
     
     margin: 15px 1%;
-    border-top: 2px solid #0B56A4;
+    border-top: 2px solid #ffc934;
     margin-bottom: 2rem;
+    width: 30%;
   }
 
   .info-block__header{
@@ -57,7 +58,12 @@ main {
     border-radius: 3px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     background: #fff;
-    height: 100%;
+    // height: 100%;
+    height: 250px;
+  }
+
+  .info-block__body--abridged-table{
+    padding: 0;
   }
 
   .info-block__logo{
@@ -79,7 +85,7 @@ main {
 
   .info-block__meta{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 14px;
   }
 
   .info-block__date{
@@ -182,8 +188,9 @@ padding-left: 0.5rem;
   }
 
   .info-block__btn{
-    width: 50%;
+    width: 60%;
     margin: 0 .5rem;
+    color: #ffc934;
 }
   
 
@@ -191,26 +198,104 @@ padding-left: 0.5rem;
     margin: auto;
   }
 
-  .info-block__btn .icon{
-    margin-left: 0;
-    margin-right: .5rem;
-    width: 1.6rem;
-    height: 1.6rem;
-    position: relative;
-    top: -1px;
-    display: inline-block;
-    vertical-align: middle;
-    fill: currentColor;
-  }
-
-  svg:not(:root) {
-    overflow: hidden;
-}
 
 .info-block__btn-container span::before {
   font-family: FontAwesome;
   content: "\f1e3";
   padding-right: 13px;
+  color: #ffc934;
+}
+
+//**********************
+//Table Scores
+//**********************
+table,thead,tbody,tr,td{
+  border: 0;
+}
+
+table.abridged-table{
+  border-spacing: 0;
+  height: 100%;
+}
+
+table.abridged-table td{
+  // padding-top: 4px;
+  // padding-bottom: 4px;
+}
+
+.abridged-table{
+  width: 100%;
+    border-collapse: inherit;
+    table-layout: fixed;
+    text-align: center;
+}
+
+.abridged-table__header-row{
+  font-size: 1.1rem;
+    background: #ebebeb;
+    color: #061729;
+    font-weight: 400;
+}
+
+.abridged-table__header-cell {
+  padding: 0.5rem 0;
+  text-align: left;
+}
+
+.abridged-table__header-cell--position {
+  width: 50px;
+  padding-left: 10px;
+}
+
+.abridged-table__header-cell--club {
+  width: 40%;
+}
+
+.abridged-table__row {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.abridged-table__position {
+  
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 17px;
+}
+
+.abridged-table__pos-value {
+  width: 50%;
+  font-weight: 500;
+  float: left;
+}
+
+
+.abridged-table__row--leicester {
+  color: #fff;
+  background: #ffc934;
+  
+}
+
+.cell-bordered{
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.abridged-table__club{
+  display: flex;
+  padding-left: 5px;
+}
+
+.abridged-table__team {
+  font-family: "Century Gothic W04 Bold", "Fira Sans", sans-serif;
+  font-weight: 100;
+  line-height: 35px;
+  padding-left: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 
