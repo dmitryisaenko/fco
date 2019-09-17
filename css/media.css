@@ -379,6 +379,9 @@
   .info-block__score {
     width: auto;
   }
+  .team-header__matches-standings ul li a {
+    font-size: 12px;
+  }
   .news-item {
     width: 46%;
   }
@@ -728,15 +731,24 @@
   .team-block-item-content-familyname {
     font-size: 19px;
   }
-  .abridged-table__header-cell--club {
-    width: 30%;
+  .abridged-table--single .abridged-table__header-cell--club {
+    width: 20%;
+    padding-left: 0;
+    text-align: center;
   }
-  table.abridged-table th:nth-child(7),
-  table.abridged-table td:nth-child(7),
-  table.abridged-table th:nth-child(8),
-  table.abridged-table td:nth-child(8),
-  table.abridged-table th:nth-child(9),
-  table.abridged-table td:nth-child(9) {
+  table.abridged-table__responsible th:nth-child(7),
+  table.abridged-table__responsible td:nth-child(7),
+  table.abridged-table__responsible th:nth-child(8),
+  table.abridged-table__responsible td:nth-child(8),
+  table.abridged-table__responsible th:nth-child(9),
+  table.abridged-table__responsible td:nth-child(9) {
+    display: none;
+  }
+  .abridged-table--single thead th div::after {
+    content: ".";
+  }
+  .abridged-table--single thead th div span,
+  .abridged-table--single .info-block__team-img img {
     display: none;
   }
 }
@@ -940,6 +952,15 @@
     width: 40px;
     height: 33px;
   }
+  .abridged-table--single tr {
+    font-size: 11px;
+  }
+  .abridged-table__header-cell--position {
+    width: 10%;
+  }
+  .abridged-table--single .abridged-table__team {
+    line-height: 27px;
+  }
 }
 /*400 и меньше */
 @media only screen and (max-width: 400px) {
@@ -1048,14 +1069,20 @@
   .news-single-subheader-info-news_title {
     font-size: 11px;
   }
-  table.abridged-table th:nth-child(5),
-  table.abridged-table td:nth-child(5),
-  table.abridged-table th:nth-child(6),
-  table.abridged-table td:nth-child(6) {
+  table.abridged-table__responsible th:nth-child(5),
+  table.abridged-table__responsible td:nth-child(5),
+  table.abridged-table__responsible th:nth-child(6),
+  table.abridged-table__responsible td:nth-child(6) {
     display: none;
   }
   .abridged-table__header-cell--club {
     width: 40%;
+  }
+  .abridged-table--single tr {
+    font-size: 9px;
+  }
+  .abridged-table--single .abridged-table__team {
+    line-height: 26px;
   }
   .info-block__score {
     width: 20%;
@@ -1111,12 +1138,18 @@
     padding: 13px 0 13px 13px;
     font-size: 13px;
   }
-  table.abridged-table th:nth-child(4),
-  table.abridged-table td:nth-child(4) {
+  table.abridged-table__responsible th:nth-child(4),
+  table.abridged-table__responsible td:nth-child(4) {
     display: none;
   }
   .abridged-table__header-cell--club {
     width: 50%;
+  }
+  .abridged-table--single tr {
+    font-size: 9px;
+  }
+  .abridged-table--single .abridged-table__team {
+    line-height: 27px;
   }
   .info-block__team-container:first-child {
     -webkit-box-orient: vertical;

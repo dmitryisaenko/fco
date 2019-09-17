@@ -152,25 +152,7 @@ padding-right: 3px;
 padding-left: 3px;
   }
 
-  .info-block__team-img{
-    background-repeat: no-repeat;
-    width: 35px;
-    height: 35px;
-    display: block;
-    background-size: 475px 435px;
-    background-image: url(https://www.lcfc.com/resources/ver/i/sprites/badges-35-sprite.png);
-    background-position: -440px -360px;
-  }
-
-  .info-block__team-img.t1{
-    background-image: url(https://www.lcfc.com/resources/ver/i/sprites/badges-35-sprite@x2.png);
-    background-position: -240px -320px;
-  }
-
-  .info-block__team-img.t13{
-    background-image: url(https://www.lcfc.com/resources/ver/i/sprites/badges-35-sprite@x2.png);    
-    background-position: -320px 0px;
-  }
+  
 
   .info-block__score{
     font-size: 18px;
@@ -260,16 +242,16 @@ table.abridged-table{
   height: 100%;
 }
 
-table.abridged-table th:nth-child(5),
-table.abridged-table td:nth-child(5),
-table.abridged-table th:nth-child(6),
-table.abridged-table td:nth-child(6),
-table.abridged-table th:nth-child(7),
-table.abridged-table td:nth-child(7),
-table.abridged-table th:nth-child(8),
-table.abridged-table td:nth-child(8),
-table.abridged-table th:nth-child(9),
-table.abridged-table td:nth-child(9),
+table.abridged-table__responsible th:nth-child(5),
+table.abridged-table__responsible td:nth-child(5),
+table.abridged-table__responsible th:nth-child(6),
+table.abridged-table__responsible td:nth-child(6),
+table.abridged-table__responsible th:nth-child(7),
+table.abridged-table__responsible td:nth-child(7),
+table.abridged-table__responsible th:nth-child(8),
+table.abridged-table__responsible td:nth-child(8),
+table.abridged-table__responsible th:nth-child(9),
+table.abridged-table__responsible td:nth-child(9)
  {
   display: none;
 }
@@ -365,6 +347,71 @@ table.abridged-table td{
   vertical-align: middle;
 }
 
+.team-header.team-header__matches-standings ul li a{
+  color: #6E6E77;
+  cursor: pointer;
+}
+
+.team-header.team-header__matches-standings ul li a.active{
+    background: #ffc934;
+    color: #fff;
+}
+
+.matches-standings__filter{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+
+.matches-standings__filter-item{
+  border: 1px solid #ffc934;
+  z-index: 99;
+}
+
+.matches-standings__filter-item::before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 32px;
+  right: 0;
+  top: 0;
+  background: url(../img/pointslide2.png);
+  background-size: 100% 100%;
+  transform: rotate(-90deg);
+  border-top: 1px solid #ffc934;
+  z-index: -1;
+}
+
+.matches-standings__filter-item select {
+  position: relative;
+  padding: 7px 18px;
+  padding-right: 41px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #6E6E77;
+  text-align: center;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.abridged-table--single tr:nth-child(2n):not(.abridged-table__row--alexandria){
+  background: #EEF5F8;
+    border-top: 1px solid #EEF5F8;
+    border-bottom: 1px solid #EEF5F8;
+}
+
+.abridged-table--single{
+  margin-bottom: 15px;
+}
+
+.abridged-table--single .abridged-table__header-cell--club{
+  width: 20%;
+}
 
   .shop {
     width: 100%;

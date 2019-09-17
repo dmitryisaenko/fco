@@ -194,48 +194,60 @@
         </div>
         <section class="main-container container">
             <h1 class="page-header page-header__matches-standings">Турнірна таблиця <span>Українська прем'єр-ліга</span></h1>
+            
             <div class="team-header team-header__matches-standings">
                 <ul>
-                    <li><a href="/matches-standings.html" class="active">ФК Олександрія</a></li>
-                    <li><a href="/matches-standings-u21.html">ФК Олександрія U-21</a></li>
-                    <li><a href="/matches-standings-u19.html">ФК Олександрія U-19</a></li>
+                    <li><a href="matches-standings.html" class="active">ФК Олександрія</a></li>
+                    <li><a href="matches-standings.html">ФК Олександрія U-21</a></li>
+                    <li><a href="matches-standings.html">ФК Олександрія U-19</a></li>
                 </ul>
             </div>
+            <form action="">
+                <div class="matches-standings__filter">
+                    <div class="matches-standings__filter-item">
+                        <select name="date-day" id="date-day">
+                            <option value="0">2017/2018</option>
+                            <option value="0">2018/2019</option>
+                            <option value="0">2019/2020</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
         
         <div>
-            <table class="abridged-table abridged-table--abridged">
+            <table class="abridged-table abridged-table--abridged abridged-table--single">
                 <thead>
                     <tr class="abridged-table__header-row">
                         <th class="abridged-table__header-cell abridged-table__header-cell--position"
                             scope="col">
-                            <div>Місце</div>
+                            <div>М<span>ісце</span></div>
                         </th>
                         <th class="abridged-table__header-cell abridged-table__header-cell--club"
                             scope="col">Команда</th>
                         <th scope="col" class="abridged-table__header-cell">
-                            <div>Ігри</div>
+                            <div>І<span class="second-hide"></span>г<span class="first-hide">ри</span></span></div>
                         </th>
                         <th scope="col" class="abridged-table__header-cell">
-                            <div>Перемоги</div>
+                            <div>Пер<span>емоги</span></div>
                         </th>
                         <th scope="col" class="abridged-table__header-cell">
-                            <div>Нічиї</div>
+                            <div>Ніч<span>иї</span></div>
                         </th>
                         <th scope="col" class="abridged-table__header-cell">
-                            <div>Поразки</div>
+                            <div>Пор<span>азки</span></div>
                         </th>
                        
                         <th scope="col" class="abridged-table__header-cell">
-                            <div>Забиті м'ячі</div>
+                            <div>Заб<span>иті м'ячі</span></div>
                         </th>
                         <th scope="col" class="abridged-table__header-cell">
-                            <div>Пропущ. м'ячі</div>
+                            <div>Проп<span>ущ. м'ячі</span></div>
                         </th>
                         <th scope="col" class="abridged-table__header-cell">
-                            <div>Різниця м'ячів</div>
+                            <div>Різн<span>иця м'ячів</span></div>
                         </th>
                         <th scope="col" class="abridged-table__header-cell">
-                            <div>Очки</div>
+                            <div>Оч<span>ки</span></div>
                         </th>
                     </tr>
                 </thead>
@@ -291,6 +303,231 @@
                         <td class="abridged-table__cell cell-bordered">1</td>
                     </tr>
 
+                    <tr class=" abridged-table__row">
+
+                        <td class="abridged-table__position">
+                            <div class="abridged-table__pos-value">4</div>
+
+                        </td>
+                        <td class="abridged-table__club" scope="row">
+                            <div class="info-block__team-img">
+                                <img src="https://fco.com.ua/sites/default/files/styles/original/public/opponent/dnipro-1.png" alt="">
+                            </div>
+                            
+                            <div class="abridged-table__team">
+                                <div class="abridged-table__team-name">Дніпро-1</div>
+                            </div>
+                        </td>
+                        <td class="abridged-table__cell">5</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell"> +4
+                        </td>
+                        <td class="abridged-table__cell">8</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell">1</td>
+                    </tr>
+                    <tr class=" abridged-table__row">
+
+                        <td class="abridged-table__position">
+                            <div class="abridged-table__pos-value">4</div>
+
+                        </td>
+                        <td class="abridged-table__club" scope="row">
+                            <div class="info-block__team-img">
+                                <img src="https://fco.com.ua/sites/default/files/styles/original/public/opponent/dnipro-1.png" alt="">
+                            </div>
+                            
+                            <div class="abridged-table__team">
+                                <div class="abridged-table__team-name">Дніпро-1</div>
+                            </div>
+                        </td>
+                        <td class="abridged-table__cell">5</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell"> +4
+                        </td>
+                        <td class="abridged-table__cell">8</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell">1</td>
+                    </tr>
+                    <tr class=" abridged-table__row">
+
+                        <td class="abridged-table__position">
+                            <div class="abridged-table__pos-value">4</div>
+
+                        </td>
+                        <td class="abridged-table__club" scope="row">
+                            <div class="info-block__team-img">
+                                <img src="https://fco.com.ua/sites/default/files/styles/original/public/opponent/dnipro-1.png" alt="">
+                            </div>
+                            
+                            <div class="abridged-table__team">
+                                <div class="abridged-table__team-name">Дніпро-1</div>
+                            </div>
+                        </td>
+                        <td class="abridged-table__cell">5</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell"> +4
+                        </td>
+                        <td class="abridged-table__cell">8</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell">1</td>
+                    </tr>
+                    <tr class=" abridged-table__row">
+
+                        <td class="abridged-table__position">
+                            <div class="abridged-table__pos-value">4</div>
+
+                        </td>
+                        <td class="abridged-table__club" scope="row">
+                            <div class="info-block__team-img">
+                                <img src="https://fco.com.ua/sites/default/files/styles/original/public/opponent/dnipro-1.png" alt="">
+                            </div>
+                            
+                            <div class="abridged-table__team">
+                                <div class="abridged-table__team-name">Дніпро-1</div>
+                            </div>
+                        </td>
+                        <td class="abridged-table__cell">5</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell"> +4
+                        </td>
+                        <td class="abridged-table__cell">8</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell">1</td>
+                    </tr>
+                    <tr class=" abridged-table__row">
+
+                        <td class="abridged-table__position">
+                            <div class="abridged-table__pos-value">4</div>
+
+                        </td>
+                        <td class="abridged-table__club" scope="row">
+                            <div class="info-block__team-img">
+                                <img src="https://fco.com.ua/sites/default/files/styles/original/public/opponent/dnipro-1.png" alt="">
+                            </div>
+                            
+                            <div class="abridged-table__team">
+                                <div class="abridged-table__team-name">Дніпро-1</div>
+                            </div>
+                        </td>
+                        <td class="abridged-table__cell">5</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell"> +4
+                        </td>
+                        <td class="abridged-table__cell">8</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell">1</td>
+                    </tr>
+                    <tr class=" abridged-table__row">
+
+                        <td class="abridged-table__position">
+                            <div class="abridged-table__pos-value">4</div>
+
+                        </td>
+                        <td class="abridged-table__club" scope="row">
+                            <div class="info-block__team-img">
+                                <img src="https://fco.com.ua/sites/default/files/styles/original/public/opponent/dnipro-1.png" alt="">
+                            </div>
+                            
+                            <div class="abridged-table__team">
+                                <div class="abridged-table__team-name">Дніпро-1</div>
+                            </div>
+                        </td>
+                        <td class="abridged-table__cell">5</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell"> +4
+                        </td>
+                        <td class="abridged-table__cell">8</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell">1</td>
+                    </tr>
+                    <tr class=" abridged-table__row">
+
+                        <td class="abridged-table__position">
+                            <div class="abridged-table__pos-value">4</div>
+
+                        </td>
+                        <td class="abridged-table__club" scope="row">
+                            <div class="info-block__team-img">
+                                <img src="https://fco.com.ua/sites/default/files/styles/original/public/opponent/dnipro-1.png" alt="">
+                            </div>
+                            
+                            <div class="abridged-table__team">
+                                <div class="abridged-table__team-name">Дніпро-1</div>
+                            </div>
+                        </td>
+                        <td class="abridged-table__cell">5</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell"> +4
+                        </td>
+                        <td class="abridged-table__cell">8</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell">1</td>
+                    </tr>
+                    <tr class=" abridged-table__row">
+
+                        <td class="abridged-table__position">
+                            <div class="abridged-table__pos-value">4</div>
+
+                        </td>
+                        <td class="abridged-table__club" scope="row">
+                            <div class="info-block__team-img">
+                                <img src="https://fco.com.ua/sites/default/files/styles/original/public/opponent/dnipro-1.png" alt="">
+                            </div>
+                            
+                            <div class="abridged-table__team">
+                                <div class="abridged-table__team-name">Дніпро-1</div>
+                            </div>
+                        </td>
+                        <td class="abridged-table__cell">5</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell"> +4
+                        </td>
+                        <td class="abridged-table__cell">8</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell">1</td>
+                    </tr>
+                    <tr class=" abridged-table__row">
+
+                        <td class="abridged-table__position">
+                            <div class="abridged-table__pos-value">4</div>
+
+                        </td>
+                        <td class="abridged-table__club" scope="row">
+                            <div class="info-block__team-img">
+                                <img src="https://fco.com.ua/sites/default/files/styles/original/public/opponent/dnipro-1.png" alt="">
+                            </div>
+                            
+                            <div class="abridged-table__team">
+                                <div class="abridged-table__team-name">Дніпро-1</div>
+                            </div>
+                        </td>
+                        <td class="abridged-table__cell">5</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">2</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell"> +4
+                        </td>
+                        <td class="abridged-table__cell">8</td>
+                        <td class="abridged-table__cell">1</td>
+                        <td class="abridged-table__cell">1</td>
+                    </tr>
                     <tr class=" abridged-table__row">
 
                         <td class="abridged-table__position">

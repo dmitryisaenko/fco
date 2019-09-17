@@ -107,17 +107,28 @@
   font-size: 19px;
 }
 
-.abridged-table__header-cell--club {
-  width: 30%;
+.abridged-table--single .abridged-table__header-cell--club{
+  width: 20%;
+  padding-left: 0;
+  text-align: center;
 }
 
-table.abridged-table th:nth-child(7),
-table.abridged-table td:nth-child(7),
-table.abridged-table th:nth-child(8),
-table.abridged-table td:nth-child(8),
-table.abridged-table th:nth-child(9),
-table.abridged-table td:nth-child(9),
+table.abridged-table__responsible th:nth-child(7),
+table.abridged-table__responsible td:nth-child(7),
+table.abridged-table__responsible th:nth-child(8),
+table.abridged-table__responsible td:nth-child(8),
+table.abridged-table__responsible th:nth-child(9),
+table.abridged-table__responsible td:nth-child(9)
  {
+  display: none;
+}
+
+.abridged-table--single thead th div::after{
+  content: ".";
+}
+
+.abridged-table--single thead th div span,
+.abridged-table--single .info-block__team-img img{
   display: none;
 }
 
