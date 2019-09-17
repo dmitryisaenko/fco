@@ -371,11 +371,13 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .info-block-container,
+  .info-block-container:not(:last-child),
   .info-table {
     width: 90%;
-    height: 250px;
-    margin: 15px 2%;
+    margin: 15px 15%;
+  }
+  .info-block__score {
+    width: auto;
   }
   .news-item {
     width: 46%;
@@ -927,6 +929,17 @@
     font-size: 14px;
     color: #333;
   }
+  .info-block-container:not(:last-child),
+  .info-table {
+    margin: 15px 2%;
+  }
+  .info-block__score {
+    font-size: 17px;
+  }
+  .info-block__score span {
+    width: 40px;
+    height: 33px;
+  }
 }
 /*400 и меньше */
 @media only screen and (max-width: 400px) {
@@ -1044,9 +1057,42 @@
   .abridged-table__header-cell--club {
     width: 40%;
   }
+  .info-block__score {
+    width: 20%;
+  }
+  .info-block__team-container {
+    font-size: 15px;
+  }
+  .info-block__btn {
+    margin: 0px;
+  }
+  .btn {
+    font-size: 11px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .info-block h3 {
+    font-size: 15px;
+  }
+  .info-block__header--table-score a {
+    font-size: 13px;
+  }
 }
 /*320 и меньше */
 @media only screen and (max-width: 320px) {
+  .logo-content h3 {
+    font-size: 16px;
+  }
+  .logo-content h4 {
+    font-size: 12px;
+  }
   .hymn-conent audio {
     width: 100%;
   }
@@ -1071,5 +1117,28 @@
   }
   .abridged-table__header-cell--club {
     width: 50%;
+  }
+  .info-block__team-container:first-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-right: 11px;
+  }
+  .info-block__team-container:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 11px;
+  }
+  .news-block .view-news {
+    margin-top: 28px;
+  }
+  .news-container {
+    margin-top: 0;
+  }
+  .info-block__btn {
+    height: 37px;
   }
 }

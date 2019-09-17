@@ -456,10 +456,10 @@ main {
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   background: #fff;
-  height: 196px;
 }
 .info-block__body--abridged-table {
   padding: 0;
+  height: 207px;
 }
 .info-block__logo {
   margin-bottom: 7px;
@@ -519,7 +519,7 @@ main {
   padding-right: 5px;
 }
 .info-block__team-container:last-child {
-  padding-left: 11px;
+  padding-left: 5px;
 }
 .info-block__team-title {
   padding-right: 3px;
@@ -670,7 +670,7 @@ table.abridged-table td:nth-child(9) {
   font-weight: 500;
   float: left;
 }
-.abridged-table__row--leicester {
+.abridged-table__row--alexandria {
   color: #fff;
   background: #ffc934;
 }
@@ -1055,7 +1055,7 @@ table.abridged-table td:nth-child(9) {
   position: relative;
 }
 .news-block .view-header a {
-  right: 0;
+  right: 5%;
   top: -22px;
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
@@ -1089,7 +1089,7 @@ table.abridged-table td:nth-child(9) {
 .news-block .view-header a:after {
   position: absolute;
   content: "";
-  right: 0;
+  right: -5%;
   bottom: -3px;
   height: 5px;
   width: 110%;
