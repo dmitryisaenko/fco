@@ -711,6 +711,7 @@ table.abridged-table__responsible td:nth-child(9) {
 .matches-standings__filter-item {
   border: 1px solid #ffc934;
   z-index: 99;
+  position: relative;
 }
 .matches-standings__filter-item::before {
   position: absolute;
@@ -2702,6 +2703,14 @@ h1.page-header__matches-calendar::before {
 .info-block-container__wo-top-border {
   border-top: none;
 }
+.matches-calendar .matches-standings__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.matches-standings__filter-item:nth-child(2) {
+  margin-left: 10px;
+}
 .matches-calendar-table {
   width: 100%;
   max-width: 100%;
@@ -2721,8 +2730,6 @@ h1.page-header__matches-calendar::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
