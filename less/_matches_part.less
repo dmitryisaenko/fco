@@ -1,0 +1,124 @@
+h1.page-header__matches-calendar::before {
+        width: 95px;
+
+}
+
+.info-block-container__wo-top-border {
+        border-top: none;
+        // width: 90%;
+        //     margin: 15px 15%;
+}
+
+.matches-calendar-table {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+}
+
+.matches-calendar-table__caption {
+        font-size: 19px;
+        color: #27282C;
+        text-transform: uppercase;
+        padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: left;
+    font-weight: 700;
+    font-family: 'PF Din Text Cond Pro XBlack';
+}
+
+.matches-calendar-table tr {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.matches-calendar-table tr:nth-child(2n-1) {
+        background: #EEF5F8;
+        border-top: 1px solid #EEF5F8;
+        border-bottom: 1px solid #EEF5F8;
+}
+
+.matches-calendar-table td{
+        border: none;
+        flex-grow: 1;
+        text-align: center;
+        color: #27282C;
+        font-size: 18px;
+        height: 45px;
+        padding: 0;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: space-around;
+        border-right: 1px solid #E0E8EC;
+    }
+
+    .matches-calendar-table td span{
+display: block;
+margin: auto;
+    }
+
+    .matches-calendar-table td img{
+        display: inline-block;
+}
+
+.matches-calendar-table td.matches-calendar-table__td--where{
+        flex-basis: 50px;
+        flex-grow: 0;
+}
+
+.matches-calendar-table td.matches-calendar-table__td--where span{
+        color: #fff;
+        background: #27282C;
+        flex-grow: 1;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content:center;
+}
+
+.matches-calendar-table td.matches-calendar-table__td--where span.home{
+        background: #ffc934;
+    color: #27282C;
+}
+
+.matches-calendar-table td.matches-calendar-table__td--command-home{
+        border: none;
+        flex-basis: 180px;
+}
+
+.matches-calendar-table td.matches-calendar-table__td--command-home span{
+        margin-right: 20px;
+}
+
+.matches-calendar-table td.matches-calendar-table__td--command-away{
+        flex-basis: 180px;
+    justify-content: start;
+}
+
+.matches-calendar-table td.matches-calendar-table__td--command-away span{
+        margin-left: 20px;
+}
+
+.matches-calendar-table td span.club-name{
+        font-weight: bold;
+}
+
+.matches-calendar-table td.matches-calendar-table__td--score{
+        border: none;
+        flex-basis: 70px;
+        flex-grow: 0;
+}
+
+.matches-calendar-table td.matches-calendar-table__td--score a{
+        font-size: 18px;
+    color: #ffc934;
+    font-weight: bold;
+}
+
+.matches-calendar-table td.matches-calendar-table__td--tournament{
+        border: none;
+        flex-basis: 180px;
+}

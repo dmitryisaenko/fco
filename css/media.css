@@ -211,8 +211,20 @@
   .right-content {
     padding-left: 0px;
   }
-  .right-content .widget {
-    margin-left: 0px;
+  .widget .info-block__team-container:first-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .widget .info-block__team-container:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info-block__score {
+    width: auto;
   }
   .team-container {
     max-width: 750px!important;
@@ -376,8 +388,21 @@
     width: 90%;
     margin: 15px 15%;
   }
-  .info-block__score {
-    width: auto;
+  .widget .info-block__team-container:first-child {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .widget .info-block__team-container:last-child {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .info-block-container__wo-top-border {
+    width: 90%;
+    margin: 15px 15%;
   }
   .team-header__matches-standings ul li a {
     font-size: 12px;
@@ -955,17 +980,30 @@
   .abridged-table--single tr {
     font-size: 11px;
   }
+  .abridged-table--single .abridged-table__team {
+    line-height: 27px;
+  }
   .abridged-table__header-cell--position {
     width: 10%;
   }
-  .abridged-table--single .abridged-table__team {
-    line-height: 27px;
+  .info-block-container__wo-top-border {
+    margin: 15px 2%;
   }
 }
 /*400 и меньше */
 @media only screen and (max-width: 400px) {
   .main-header .main-title h1 {
     font-size: 25px;
+  }
+  .main-header .history-dates {
+    padding: 0;
+  }
+  .history-point .history-point-item {
+    width: 32px;
+    height: 32px;
+  }
+  .history-point .history-point-item span {
+    font-size: 9px;
   }
   .sponsor img {
     display: none;
@@ -1086,6 +1124,18 @@
   }
   .info-block__score {
     width: 20%;
+  }
+  .widget .info-block__team-container:first-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .widget .info-block__team-container:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .info-block__team-container {
     font-size: 15px;

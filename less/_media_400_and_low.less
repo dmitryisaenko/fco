@@ -1,7 +1,20 @@
 @media only screen and (max-width: 400px) {
   .main-header .main-title h1 {
     font-size: 25px;
-  }  
+  } 
+
+  .main-header .history-dates{
+    padding: 0;
+  }
+
+  .history-point .history-point-item{
+    width: 32px;
+    height: 32px;
+  }
+
+  .history-point .history-point-item span {
+    font-size: 9px;
+}
   
   .sponsor img {
         display: none;
@@ -137,6 +150,15 @@ table.abridged-table__responsible td:nth-child(6)
 
 .info-block__score {
   width: 20%;
+  
+}
+
+.widget .info-block__team-container:first-child{
+  flex-direction: column-reverse;
+}
+
+.widget .info-block__team-container:last-child{
+  flex-direction: column;
 }
 
 .info-block__team-container {
