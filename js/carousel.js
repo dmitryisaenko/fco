@@ -41,6 +41,7 @@ $(document).ready(function(){
 
 
     $('.slick-carousel-media-single').slick({
+      lazyLoad: 'ondemand',
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: true,

@@ -2863,10 +2863,7 @@ ul.horizontal-tabs-list li {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
 }
-ul.horizontal-tabs-list li.selected {
-  padding: 0 0 1px 0;
-}
-ul.horizontal-tabs-list li a {
+ul.horizontal-tabs-list li {
   display: block;
   text-decoration: none;
   padding: 8px 0;
@@ -2879,7 +2876,7 @@ ul.horizontal-tabs-list li a {
   background: transparent !important;
   text-align: center;
 }
-ul.horizontal-tabs-list li.selected a {
+ul.horizontal-tabs-list li.active {
   color: #ffc934;
 }
 .group-protocol {
@@ -3014,6 +3011,22 @@ ul.horizontal-tabs-list li.selected a {
       flex-wrap: wrap;
   font-size: 18px;
   color: #27282C;
+}
+.tabs__content {
+  display: none;
+}
+.tabs__content.active {
+  display: block;
+}
+.with-margin-top {
+  margin-top: 15px;
+}
+.with-vertical-margin {
+  margin: 15px auto;
+}
+.match-foto img {
+  width: auto;
+  margin: 0 auto;
 }
 /* ==================================== */
 /*		  	  Footer		

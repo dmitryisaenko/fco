@@ -18,6 +18,8 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script> -->
     <link rel="stylesheet" id="font-awesome-css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         type="text/css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/libs/slick/slick-theme.css" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <link rel="stylesheet" href="css/media.css" type="text/css" />
 </head>
@@ -242,436 +244,632 @@
                     </div>
                 </div>
             </div>
-            <div class="matches-center__horizontal-tabs-list">
-                <ul class="horizontal-tabs-list">
-                    <li class="selected"><a href="#">Протокол</a></li>
-                    <li><a href="#">Звіт</a></li>
-                    <li><a href="#">Фото</a></li>
-                    <li><a href="#">Відео</a></li>
+            <div class="macth-content-block">
+                <div class="matches-center__horizontal-tabs-list tabs">
+                    <ul class="horizontal-tabs-list tabs__caption">
+                        <li class="active">Протокол</li>
+                        <li>Звіт</li>
+                        <li>Фото</li>
+                        <li>Відео</li>
+                    </ul>
 
-                </ul>
-            </div>
-
-            <div class="group-protocol">
-                <div class="group-protocol__item">
-                    <h3>
-                        <span>Голи</span>
-                    </h3>
-                    <div class="team-block-wrapper">
-                        <div class="team-block">
-                            <div class="team-block__team-name">
-                                Ворскла
-                            </div>
-                            <div class="team-block__item">
-                                <div class="team-block__item--player">
-                                    Шустрих Хлопець
-                                </div>
-                                <div class="team-block__item--goals_time">
-                                    24
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-block">
-                            <div class="team-block__team-name">
-                                Олександрія
-                            </div>
-                            <div class="team-block__item">
-                                <div class="team-block__item--player">
-                                    Шастал Дмитро
-                                </div>
-                                <div class="team-block__item--goals_time">
-                                    23
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="group-protocol__item">
-                    <h3>
-                        <span>Попередження</span>
-                    </h3>
-                    <div class="team-block-wrapper">
-                        <div class="team-block">
-                            <div class="team-block__team-name">
-                                Ворскла
-                            </div>
-                            <div class="team-block__item">
-                                <div class="team-block__item--player">
-                                    Баєнко Володимир
-                                </div>
-                                <div class="team-block__item--goals_time">
-                                    24
-                                </div>
-                                <div class="team-block__item--player_card">
-                                    <span class="warning-card__yellow"></span>
+                    <div id="match-protocol" class="tabs__content active">
+                        <div class="group-protocol">
+                            <div class="group-protocol__item">
+                                <h3>
+                                    <span>Голи</span>
+                                </h3>
+                                <div class="team-block-wrapper">
+                                    <div class="team-block">
+                                        <div class="team-block__team-name">
+                                            Ворскла
+                                        </div>
+                                        <div class="team-block__item">
+                                            <div class="team-block__item--player">
+                                                Шустрих Хлопець
+                                            </div>
+                                            <div class="team-block__item--goals_time">
+                                                24
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team-block">
+                                        <div class="team-block__team-name">
+                                            Олександрія
+                                        </div>
+                                        <div class="team-block__item">
+                                            <div class="team-block__item--player">
+                                                Шастал Дмитро
+                                            </div>
+                                            <div class="team-block__item--goals_time">
+                                                23
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="team-block__item">
-                                <div class="team-block__item--player">
-                                    Петровіч Тодор
-                                </div>
-                                <div class="team-block__item--goals_time">
-                                    54
-                                </div>
-                                <div class="team-block__item--player_card">
-                                    <span class="warning-card__yellow"></span>
-                                </div>
-                            </div>
-                            <div class="team-block__item">
-                                <div class="team-block__item--player">
-                                    Луізао
-                                </div>
-                                <div class="team-block__item--goals_time">
-                                    74
-                                </div>
-                                <div class="team-block__item--player_card">
-                                    <span class="warning-card__yellow"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-block">
-                            <div class="team-block__team-name">
-                                Олександрія
-                            </div>
-                            <div class="team-block__item">
-                                <div class="team-block__item--player">
-                                    Пашаєв Павло
-                                </div>
-                                <div class="team-block__item--goals_time">
-                                    34
-                                </div>
-                                <div class="team-block__item--player_card">
-                                    <span class="warning-card__yellow"></span>
-                                </div>
-                            </div>
-                            <div class="team-block__item">
-                                <div class="team-block__item--player">
-                                    Дубра Каспарс
-                                </div>
-                                <div class="team-block__item--goals_time">
-                                    47
-                                </div>
-                                <div class="team-block__item--player_card">
-                                    <span class="warning-card__yellow"></span>
-                                </div>
-                            </div>
-                            <div class="team-block__item">
-                                <div class="team-block__item--player">
-                                    Довгий Олексій
-                                </div>
-                                <div class="team-block__item--goals_time">
-                                    92
-                                </div>
-                                <div class="team-block__item--player_card">
-                                    <span class="warning-card__yellow"></span>
-                                </div>
-                            </div>
-                            <div class="team-block__item">
-                                <div class="team-block__item--player">
-                                    Бухал Гліб
-                                </div>
-                                <div class="team-block__item--goals_time">
-                                    93
-                                </div>
-                                <div class="team-block__item--player_card">
-                                    <span class="warning-card__yellow"></span>
-                                </div>
-                            </div>
+                            <div class="group-protocol__item">
+                                <h3>
+                                    <span>Попередження</span>
+                                </h3>
+                                <div class="team-block-wrapper">
+                                    <div class="team-block">
+                                        <div class="team-block__team-name">
+                                            Ворскла
+                                        </div>
+                                        <div class="team-block__item">
+                                            <div class="team-block__item--player">
+                                                Баєнко Володимир
+                                            </div>
+                                            <div class="team-block__item--goals_time">
+                                                24
+                                            </div>
+                                            <div class="team-block__item--player_card">
+                                                <span class="warning-card__yellow"></span>
+                                            </div>
+                                        </div>
+                                        <div class="team-block__item">
+                                            <div class="team-block__item--player">
+                                                Петровіч Тодор
+                                            </div>
+                                            <div class="team-block__item--goals_time">
+                                                54
+                                            </div>
+                                            <div class="team-block__item--player_card">
+                                                <span class="warning-card__yellow"></span>
+                                            </div>
+                                        </div>
+                                        <div class="team-block__item">
+                                            <div class="team-block__item--player">
+                                                Луізао
+                                            </div>
+                                            <div class="team-block__item--goals_time">
+                                                74
+                                            </div>
+                                            <div class="team-block__item--player_card">
+                                                <span class="warning-card__yellow"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team-block">
+                                        <div class="team-block__team-name">
+                                            Олександрія
+                                        </div>
+                                        <div class="team-block__item">
+                                            <div class="team-block__item--player">
+                                                Пашаєв Павло
+                                            </div>
+                                            <div class="team-block__item--goals_time">
+                                                34
+                                            </div>
+                                            <div class="team-block__item--player_card">
+                                                <span class="warning-card__yellow"></span>
+                                            </div>
+                                        </div>
+                                        <div class="team-block__item">
+                                            <div class="team-block__item--player">
+                                                Дубра Каспарс
+                                            </div>
+                                            <div class="team-block__item--goals_time">
+                                                47
+                                            </div>
+                                            <div class="team-block__item--player_card">
+                                                <span class="warning-card__yellow"></span>
+                                            </div>
+                                        </div>
+                                        <div class="team-block__item">
+                                            <div class="team-block__item--player">
+                                                Довгий Олексій
+                                            </div>
+                                            <div class="team-block__item--goals_time">
+                                                92
+                                            </div>
+                                            <div class="team-block__item--player_card">
+                                                <span class="warning-card__yellow"></span>
+                                            </div>
+                                        </div>
+                                        <div class="team-block__item">
+                                            <div class="team-block__item--player">
+                                                Бухал Гліб
+                                            </div>
+                                            <div class="team-block__item--goals_time">
+                                                93
+                                            </div>
+                                            <div class="team-block__item--player_card">
+                                                <span class="warning-card__yellow"></span>
+                                            </div>
+                                        </div>
 
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="group-protocol">
-                <div class="group-protocol__item">
-                    <h3>
-                        <span>Стартовий склад</span>
-                    </h3>
-                    <div class="team-block-wrapper">
-                        <div class="team-block">
-                            <div class="team-block__team-name team-name--main">
-                                Ворскла
-                            </div>
-                            <table class="matches-center-table">
-                                <thead>
-                                    <tr>
-                                        <th>Номер</th>
-                                        <th>Гравець</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>21</td>
-                                        <td>Ткаченко Олександр</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21</td>
-                                        <td>Ткаченко Олександр</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21</td>
-                                        <td>Ткаченко Олександр (К)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21</td>
-                                        <td>Ткаченко Олександр</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21</td>
-                                        <td>Ткаченко Олександр</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21</td>
-                                        <td>Ткаченко Олександр</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21</td>
-                                        <td>Ткаченко Олександр</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21</td>
-                                        <td>Ткаченко Олександр</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21</td>
-                                        <td>Ткаченко Олександр</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21</td>
-                                        <td>Ткаченко Олександр</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21</td>
-                                        <td>Ткаченко Олександр</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="team-block">
-                                <div class="team-block__team-name team-name--main">
-                                    Олександрія
-                                </div>
-                                <table class="matches-center-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Номер</th>
-                                            <th>Гравець</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр (К)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                    </div>
-                </div>
-                <div class="group-protocol__item">
-                        <h3>
-                            <span>Запасні гравці</span>
-                        </h3>
-                        <div class="team-block-wrapper">
-                            <div class="team-block">
-                                <div class="team-block__team-name">
-                                    Ворскла
-                                </div>
-                                <table class="matches-center-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Номер</th>
-                                            <th>Гравець</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>                                        
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="team-block">
-                                <div class="team-block__team-name">
-                                    Олександрія
-                                </div>
-                                <table class="matches-center-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Номер</th>
-                                            <th>Гравець</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>Ткаченко Олександр</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <div class="group-protocol">
-                    <div class="group-protocol__item">
-                        <h3>
-                            <span>Тренери</span>
-                        </h3>
-                        <div class="team-block-wrapper">
-                            <div class="team-block">
-                                <div class="team-block__team-name">
-                                    Ворскла
-                                </div>
-                                <div class="team-block__item">
-                                    <div class="team-block__item--player">
-                                        Косовський Віталій
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-block">
-                                <div class="team-block__team-name">
-                                    Олександрія
-                                </div>
-                                <div class="team-block__item">
-                                    <div class="team-block__item--player">
-                                        Шаран Володимир
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="group-protocol__item">
-                        <h3>
-                            <span>Арбітри</span>
-                        </h3>
-                            <div class="referee-block">
-                               <div class="referee-block__item">
-                                    <div class="team-block__referee">
-                                        Головний арбітр
+                        <div class="group-protocol">
+                            <div class="group-protocol__item">
+                                <h3>
+                                    <span>Стартовий склад</span>
+                                </h3>
+                                <div class="team-block-wrapper">
+                                    <div class="team-block">
+                                        <div class="team-block__team-name team-name--main">
+                                            Ворскла
+                                        </div>
+                                        <table class="matches-center-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Номер</th>
+                                                    <th>Гравець</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр (К)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                    <div class="team-block__referee-name">
-                                        Козик Ярослав
+                                    <div class="team-block">
+                                        <div class="team-block__team-name team-name--main">
+                                            Олександрія
+                                        </div>
+                                        <table class="matches-center-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Номер</th>
+                                                    <th>Гравець</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр (К)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                               </div>
-                               <div class="referee-block__item">
-                                    <div class="team-block__referee">
-                                        Асистенти арбітра
+                                </div>
+                            </div>
+                            <div class="group-protocol__item">
+                                <h3>
+                                    <span>Запасні гравці</span>
+                                </h3>
+                                <div class="team-block-wrapper">
+                                    <div class="team-block">
+                                        <div class="team-block__team-name">
+                                            Ворскла
+                                        </div>
+                                        <table class="matches-center-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Номер</th>
+                                                    <th>Гравець</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                    <div class="team-block__referee-name">
-                                        
-Коротін Володимир
+                                    <div class="team-block">
+                                        <div class="team-block__team-name">
+                                            Олександрія
+                                        </div>
+                                        <table class="matches-center-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Номер</th>
+                                                    <th>Гравець</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>Ткаченко Олександр</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                               </div>    
-                               <div class="referee-block__item">
-                                    <div class="team-block__referee">
-                                        Четвертий арбітр
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group-protocol">
+                            <div class="group-protocol__item">
+                                <h3>
+                                    <span>Тренери</span>
+                                </h3>
+                                <div class="team-block-wrapper">
+                                    <div class="team-block">
+                                        <div class="team-block__team-name">
+                                            Ворскла
+                                        </div>
+                                        <div class="team-block__item">
+                                            <div class="team-block__item--player">
+                                                Косовський Віталій
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="team-block__referee-name">
+                                    <div class="team-block">
+                                        <div class="team-block__team-name">
+                                            Олександрія
+                                        </div>
+                                        <div class="team-block__item">
+                                            <div class="team-block__item--player">
+                                                Шаран Володимир
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-protocol__item">
+                                <h3>
+                                    <span>Арбітри</span>
+                                </h3>
+                                <div class="referee-block">
+                                    <div class="referee-block__item">
+                                        <div class="team-block__referee">
+                                            Головний арбітр
+                                        </div>
+                                        <div class="team-block__referee-name">
+                                            Козик Ярослав
+                                        </div>
+                                    </div>
+                                    <div class="referee-block__item">
+                                        <div class="team-block__referee">
+                                            Асистенти арбітра
+                                        </div>
+                                        <div class="team-block__referee-name">
+
+                                            Коротін Володимир
+                                        </div>
+                                    </div>
+                                    <div class="referee-block__item">
+                                        <div class="team-block__referee">
+                                            Четвертий арбітр
+                                        </div>
+                                        <div class="team-block__referee-name">
                                             Бондаренко Дмитро
+                                        </div>
                                     </div>
-                               </div>    
-                               <div class="referee-block__item">
-                                    <div class="team-block__referee">
-                                        Суддівський спостерігач
-                                    </div>
-                                    <div class="team-block__referee-name">
+                                    <div class="referee-block__item">
+                                        <div class="team-block__referee">
+                                            Суддівський спостерігач
+                                        </div>
+                                        <div class="team-block__referee-name">
                                             Лучі Лучано
+                                        </div>
                                     </div>
-                               </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="match-zvit" class="tabs__content">
+                            <div class="news-single-header">
+                                    <div class="news-single-header-logo with-margin-top">
+                                        <img class="img-responsive" src="img/zvit-logo-img.jpg" alt="">
+                                    </div>
+                                    <div class="news-single-subheader">
+                                        <div class="news-single-subheader-title">
+                                            <h1>
+                                                «Олександрія» – «Десна» – 0:3
+                                            </h1>
+                                        </div>
+                                        <div class="news-single-subheader-info">
+                                            <div class="top-line">
+                                                <div class="news-single-subheader-info-date">
+                                                    09.09.2019 23:36
+                                                </div>
+                                                <div class="news-single-subheader-info-news_title">
+                                                    Новини
+                                                </div>
+                                            </div>
+                                            <div class="bottom-line">
+                                                <a class="facebook_icon social-icon-item" href="#"></a>
+                                                <a class="twitter_icon social-icon-item" href="#"></a>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                        <section class="main-content media_991">
+                            <div class="central-content central-content-news-single">
+                                    <p><strong><em>Олександрійський голкіпер Юрій Паньків узяв участь у відкритому тренуванні
+                                                збірної України на «Дніпро-Арені».</em></strong></p>
+            
+                                    <p>Тренування проходило увечері 9 вересня в Дніпрі на стадіоні «Дніпро-Арена», напередодні
+                                        товариського поєдинку Україна-Нігерія.</p>
+            
+                                    <p>Підтримати команду прийшли 7200 вболівальників. Юрій Паньків, попри навантаження, перебував у
+                                        чудовому настрої й встигав пожартувати зі своїм давнім товаришем Андрієм Пятовим. </p>
+            
+                                    <p><em>– Емоції просто зашкалюють – це неймовірно! – Ділиться Юрій враженнями від тренування. –
+                                            Передаю вітання вболівальникам «Олександрії»! Всіх обіймаю, скоро побачимося!</em></p>
+            
+                                    <p>Фоторепортаж:</p>
+                                    <div class="slick-carousel-media-single">
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_01.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_02.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_03.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_04.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_05.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_07.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_08.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_09.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_10.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_11.jpg" alt=""> </div>
+                                    </div>
+                                    <div class="slider-nav">
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_01.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_02.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_03.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_04.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_05.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_07.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_08.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_09.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_10.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" src="img/foto-reportazh_11.jpg" alt=""> </div>
+                                    </div>
+            
+            
+                                    <p><em>Нагадуємо, що головний тренер збірної України Андрій Шевченко прийняв рішення викликати
+                                            до складу національної команди олександрійця Юрія Паньківа у зв’язку з невизначеністю
+                                            ситуації щодо Дениса Бойка, котрий мав проходити ретельне медичне обстеження.</em></p>
+            
+                                    <p><em>Для голкіпера «Олександрії» це вже <a href="#">другий виклик</a> до лав синьо-жовтих.
+                                            Уперше Юрія було запрошено на попередній, червневий збір, який він відпрацював повністю,
+                                            хоча поки що й не дебютував за головну команду країни.</em></p>
+            
+                                    <p><em>Товариський матч Україна-Нігерія відбудеться 10 вересня. Розпочнеться гра о 21.30.</em>
+                                    </p>
+            
+            
+                            </div>
+                            <aside class="right-content">
+                                    <div class="widget with-margin-top">
+                                        <div class="widget-title widget-title-tags">
+                                            Теги
+                                        </div>
+                                        <div class="widget-body">
+                                            <div class="widget-tags-block">
+                                                    <span><a href="#">Збірна України</a></span>
+                                                    <span><a href="#">Паньків</a></span>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                
+                                    <div class="widget">
+                                        <div class="widget-title">
+                                            Анонс
+                                        </div>
+                                        <div class="widget-body">
+                                            <div class="info-block__body">
+                                                <div class="info-block__logo">
+                                                    <div class="info-block__logo--tur">
+                                                        9-й тур</br>сезон 2019/2020
+                                                    </div>
+                                                    <img src="img/upl.png" alt="">
+                                                </div>
+                                                <div class="info-block__meta">
+                                                    <span class="info-block__date">
+                                                        21 вересня 2019р
+                                                    </span>
+                                                    <span class="info-block__stadium">
+                                                        КСК "Олімпійський", м.Київ
+                                                    </span>
+                        
+                                                </div>
+                                                <div class="info-block__kickoff-container">
+                                                    <div class="info-block__team-container">
+                                                        <span class="info-block__team-title info-block__team-title--home">
+                                                            Колос
+                                                        </span>
+                                                        <div class="info-block__team-img">
+                                                            <img src="https://fco.com.ua/sites/default/files/styles/small/public/opponent/desna_0.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="info-block__score">
+                                                        <span>1</span>
+                                                        <span>0</span>
+                        
+                                                    </div>
+                                                    <div class="info-block__team-container">
+                                                        <div class="info-block__team-img">
+                                                            <img src="https://fco.com.ua/sites/default/files/styles/original/public/opponent/olexandriya.png" alt="">
+                                                        </div>
+                                                        <span class="info-block__team-title info-block__team-title--away">
+                                                            Олександрія
+                                                        </span>
+                        
+                                                    </div>
+                                                </div>
+                                                <div class="info-block__btn-container">
+                                                    <a href="#" class="btn info-block__btn info-block__btn--single">
+                                                        <span class="buy-ticket">Купити квіток</span>
+                                                    </a>
+                                                    <a href="#" class="btn info-block__btn info-block__btn--single">
+                                                        <span class="match-center">Матч центр</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                                </aside>
+                        </section>
+                    </div>
+                    <div id="match-foto" class="tabs__content">
+                            <div class="match-foto with-margin-top">
+                                    
+                                    <div class="slick-carousel-media-single">
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_01.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_02.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_03.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_04.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_05.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_07.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_08.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_09.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_10.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_11.jpg" alt=""> </div>
+                                    </div>
+                                    <div class="slider-nav">
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_01.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_02.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_03.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_04.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_05.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_07.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_08.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_09.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_10.jpg" alt=""> </div>
+                                        <div> <img class="img-responsive" data-lazy="img/foto-reportazh_11.jpg" alt=""> </div>
+                                    </div>
+            
                             </div>
                     </div>
+                    <div id="match-video" class="tabs__content">
+                        <div class="news-single-header-logo">
+                            <div class="youtube-video-frame with-vertical-margin">
+                                <iframe class="youtube-video" src="https://www.youtube.com/embed/NHTokK31AJA" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
         </section>
         <div class="ads-block-top">
             <img src="img/banner/baner_na_sayt.jpg" alt="">
@@ -867,6 +1065,9 @@
     <div id="back-top" class="back-top"></div>
 
     <script src="libs/jquery-3.2.1.min.js"></script>
+    <!-- <script src="/libs/OwlCarousel2/owl.carousel.min.js"></script> -->
+    <script type="text/javascript" src="/libs/slick/slick.min.js"></script>
+    <script src="js/carousel.js"></script>
     <script src="js/common.js"></script>
 </body>
 
