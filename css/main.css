@@ -2711,7 +2711,8 @@ h1.page-header__matches-calendar::before {
 .matches-standings__filter-item:nth-child(2) {
   margin-left: 10px;
 }
-.matches-calendar-table {
+.matches-calendar-table,
+.matches-center-table {
   width: 100%;
   max-width: 100%;
   margin-bottom: 20px;
@@ -2837,6 +2838,182 @@ h1.page-header__matches-calendar::before {
   border: none;
   -ms-flex-preferred-size: 180px;
       flex-basis: 180px;
+}
+.matches-center__horizontal-tabs-list {
+  width: 100%;
+}
+ul.horizontal-tabs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #27282C;
+  padding: 5px 0;
+  margin: 0;
+  border: 0;
+  position: relative;
+  list-style: none;
+  list-style-image: none;
+  width: 100%;
+}
+ul.horizontal-tabs-list li {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+ul.horizontal-tabs-list li {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+ul.horizontal-tabs-list li.selected {
+  padding: 0 0 1px 0;
+}
+ul.horizontal-tabs-list li a {
+  display: block;
+  text-decoration: none;
+  padding: 8px 0;
+  position: relative;
+  top: 0px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  background: transparent !important;
+  text-align: center;
+}
+ul.horizontal-tabs-list li.selected a {
+  color: #ffc934;
+}
+.group-protocol {
+  width: 100%;
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.group-protocol__item {
+  width: 49%;
+}
+.team-block-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.group-protocol h3 {
+  margin-top: 0;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-size: 18px;
+  color: #6E6E77;
+  font-weight: 300;
+  border-bottom: 2px solid #E8EAEF;
+}
+.group-protocol h3 span {
+  color: #27282C;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+  display: inline-block;
+  border-bottom: 2px solid #ffc934;
+  top: 2px;
+}
+.group-protocol .team-block {
+  display: block;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+.team-block__team-name {
+  font-size: 16px;
+  color: #717378;
+  padding: 2px;
+  border: none;
+  font-weight: 400;
+}
+.team-name--main {
+  font-size: 18px;
+  font-weight: 800;
+  color: #000;
+}
+.team-block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.team-block__item--player,
+.team-block__item--goals_time,
+.team-block__item--player_card {
+  font-size: 16px;
+  color: #27282C;
+  padding: 5px;
+  border: none;
+}
+.warning-card__yellow {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  background-image: url(../img/sprite.png);
+  background-position: -59px -90px;
+  -webkit-box-shadow: 1px 1px 1px #333;
+          box-shadow: 1px 1px 1px #333;
+}
+.matches-center-table {
+  border-spacing: 0px;
+}
+.matches-center-table th {
+  font-size: 16px;
+  color: #717378;
+  border: none;
+  text-align: left;
+}
+.matches-center-table td {
+  font-size: 17px;
+  color: #27282C;
+  padding: 5px 2px;
+}
+.matches-center-table tr:nth-child(2n),
+.referee-block .referee-block__item:nth-child(2n),
+.team-block .team-block__item:nth-child(n+1):nth-child(odd) {
+  background-color: #f3f3f3;
+}
+.referee-block {
+  width: 100%;
+  margin-top: 15px;
+  padding: 0 10px;
+}
+.referee-block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+}
+.team-block__referee {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  font-size: 16px;
+  color: #717378;
+  font-weight: 400;
+}
+.team-block__referee-name {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 18px;
+  color: #27282C;
 }
 /* ==================================== */
 /*		  	  Footer		
