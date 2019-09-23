@@ -529,15 +529,33 @@ main {
 .info-block__team-container:last-child {
   padding-left: 5px;
 }
+.info-block__team-title--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 60px;
+}
 .info-block__team-title {
   padding-right: 3px;
   font-weight: 100;
+}
+.info-block__team-title--uppercase {
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .info-block__team-title--home {
   padding-right: 3px;
 }
 .info-block__team-title--away {
   padding-left: 3px;
+}
+.info-block__team--goal-player {
+  font-weight: 100;
+  font-size: 11px;
 }
 .info-block__score {
   font-size: 18px;
@@ -2996,7 +3014,7 @@ ul.horizontal-tabs-list li.active {
   padding: 5px;
   border: none;
 }
-.warning-card__yellow {
+.warning-card {
   position: relative;
   display: inline-block;
   width: 15px;
@@ -3005,6 +3023,15 @@ ul.horizontal-tabs-list li.active {
   background-position: -59px -90px;
   -webkit-box-shadow: 1px 1px 1px #333;
           box-shadow: 1px 1px 1px #333;
+}
+.warning-card__yellow {
+  background-position: -59px -90px;
+}
+.warning-card__2yellow {
+  background-position: -8px -90px;
+}
+.warning-card__red {
+  background-position: -34px -90px;
 }
 .matches-center-table {
   border-spacing: 0px;
@@ -3045,8 +3072,8 @@ ul.horizontal-tabs-list li.active {
   font-weight: 400;
 }
 .team-block__referee-name {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

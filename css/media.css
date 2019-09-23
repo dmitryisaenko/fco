@@ -249,7 +249,8 @@
   .team-container {
     max-width: 750px!important;
   }
-  .widget .column-direction {
+  .widget .column-direction,
+  .column-direction {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -438,6 +439,10 @@
   .info-block-container__wo-top-border {
     width: 90%;
     margin: 15px 15%;
+  }
+  .info-block-container__wo-top-border--match-center {
+    width: 100%;
+    margin: 15px 5%;
   }
   .team-header__matches-standings ul li a {
     font-size: 12px;
@@ -1121,6 +1126,12 @@
   }
   ul.horizontal-tabs-list li {
     font-size: 15px;
+  }
+  .info-block__team--goal-player {
+    font-size: 11px;
+  }
+  .info-block__team--goal-player {
+    display: none;
   }
 }
 /*400 и меньше */
