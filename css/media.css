@@ -57,6 +57,26 @@
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  ul.horizontal-tabs-list {
+    margin-bottom: 15px;
+  }
+  .group-protocol {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .group-protocol__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 10px 5px;
+  }
+  .team-block__referee {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+  .group-protocol .team-block__coaches {
+    -ms-flex-preferred-size: 24%;
+        flex-basis: 24%;
+  }
 }
 /*1100 и меньше */
 @media only screen and (max-width: 1100px) {
@@ -815,6 +835,19 @@
   .abridged-table--single .info-block__team-img img {
     display: none;
   }
+  .group-protocol h3 {
+    font-size: 16px;
+  }
+  .group-protocol .team-block {
+    -ms-flex-preferred-size: 98%;
+        flex-basis: 98%;
+  }
+  .group-protocol .team-block:nth-child(2n) {
+    margin-top: -10px;
+  }
+  .group-protocol__item {
+    margin: 5px;
+  }
 }
 /*576 и меньше */
 @media only screen and (max-width: 576px) {
@@ -1082,6 +1115,13 @@
     margin-top: 10px;
     margin-bottom: -15px;
   }
+  ul.horizontal-tabs-list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  ul.horizontal-tabs-list li {
+    font-size: 15px;
+  }
 }
 /*400 и меньше */
 @media only screen and (max-width: 400px) {
@@ -1257,6 +1297,29 @@
   .info-block__time {
     width: 27%;
     font-size: 11px;
+  }
+  ul.horizontal-tabs-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  ul.horizontal-tabs-list li {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+  }
+  .referee-block__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .team-block__referee {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 5px;
+  }
+  .team-block__referee-name {
+    padding-left: 5px;
   }
 }
 /*320 и меньше */

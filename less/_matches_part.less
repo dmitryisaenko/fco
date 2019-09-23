@@ -168,7 +168,7 @@ ul.horizontal-tabs-list li.active{
 ul.horizontal-tabs-list li {
         display: block;
         text-decoration: none;
-        padding: 8px 0;
+        padding: 8px 15px;
         position: relative;
         top: 0px;    
         font-size: 17px;
@@ -185,13 +185,14 @@ ul.horizontal-tabs-list li.active {
 
 .group-protocol{
         width: 100%;
-        padding: 15px 0;
+        
         display: flex;
         justify-content: space-between;
 }
 
 .group-protocol__item{
-        width: 49%;
+        flex-basis: 49%;
+        margin: 15px 0;
 }
 
 .team-block-wrapper{
@@ -199,6 +200,10 @@ ul.horizontal-tabs-list li.active {
         display: flex;
         justify-content: space-between;  
         flex-wrap: wrap;
+}
+
+.team-block-wrapper__coaches{
+        justify-content: flex-start; 
 }
 
 .group-protocol h3{
@@ -291,6 +296,8 @@ ul.horizontal-tabs-list li.active {
         background-color: #f3f3f3;
 }
 
+
+
 .referee-block{
         width: 100%;
     margin-top: 15px;
@@ -313,7 +320,7 @@ ul.horizontal-tabs-list li.active {
         flex-basis: 60%;
         display: flex;
         flex-wrap: wrap;
-        font-size: 18px;
+        font-size: 17px;
         color: #27282C;
 }
 

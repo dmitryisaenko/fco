@@ -2902,7 +2902,7 @@ ul.horizontal-tabs-list li {
 ul.horizontal-tabs-list li {
   display: block;
   text-decoration: none;
-  padding: 8px 0;
+  padding: 8px 15px;
   position: relative;
   top: 0px;
   font-size: 17px;
@@ -2917,7 +2917,6 @@ ul.horizontal-tabs-list li.active {
 }
 .group-protocol {
   width: 100%;
-  padding: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2926,7 +2925,9 @@ ul.horizontal-tabs-list li.active {
           justify-content: space-between;
 }
 .group-protocol__item {
-  width: 49%;
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+  margin: 15px 0;
 }
 .team-block-wrapper {
   width: 100%;
@@ -2938,6 +2939,11 @@ ul.horizontal-tabs-list li.active {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.team-block-wrapper__coaches {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .group-protocol h3 {
   margin-top: 0;
@@ -3046,7 +3052,7 @@ ul.horizontal-tabs-list li.active {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-size: 18px;
+  font-size: 17px;
   color: #27282C;
 }
 .tabs__content {
