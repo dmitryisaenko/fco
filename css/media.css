@@ -77,6 +77,9 @@
     -ms-flex-preferred-size: 24%;
         flex-basis: 24%;
   }
+  .info-block__match-center {
+    margin-top: -5px;
+  }
 }
 /*1100 и меньше */
 @media only screen and (max-width: 1100px) {
@@ -424,6 +427,9 @@
     width: 90%;
     margin: 15px 15%;
   }
+  .info-block__match-center {
+    margin-top: -20px;
+  }
   .widget .info-block__team-container:first-child {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -595,6 +601,16 @@
   }
   .info-block__score span {
     width: 2.5rem;
+  }
+  .scorers-table th {
+    font-size: 13px;
+  }
+  .scorers-table td,
+  .scorers-table td a {
+    font-size: 15px;
+  }
+  .scorers-table th:nth-child(2) {
+    width: 140px;
   }
   /* ==================================== */
   /*		  	  Mobile Navigaton Menu		
@@ -905,7 +921,7 @@
     margin: 0;
   }
   .social-block > .social-item {
-    width: 79%;
+    width: 56%;
   }
   .main-header .main-title h1 {
     font-size: 38px;
@@ -1133,6 +1149,20 @@
   .info-block__team--goal-player {
     display: none;
   }
+  .scorers-table th {
+    font-size: 9px;
+  }
+  .scorers-table td,
+  .scorers-table td a {
+    font-size: 13px;
+  }
+  .scorers-table th:nth-child(1),
+  .scorers-table td:nth-child(1) {
+    display: none;
+  }
+  .scorers-table tbody td {
+    height: 49px;
+  }
 }
 /*400 и меньше */
 @media only screen and (max-width: 400px) {
@@ -1152,7 +1182,8 @@
   .sponsor img {
     display: none;
   }
-  .social-block > .field-items > .field-item {
+  .social-block > .field-items > .field-item,
+  .social-block .social-item {
     width: 235px;
     padding: 30px 24px;
   }
@@ -1332,6 +1363,19 @@
   .team-block__referee-name {
     padding-left: 5px;
   }
+  .scorers-table th {
+    font-size: 7px;
+  }
+  .scorers-table td,
+  .scorers-table td a {
+    font-size: 11px;
+  }
+  .scorers-table tbody td {
+    height: 39px;
+  }
+  .scorers-table th span {
+    display: none;
+  }
 }
 /*320 и меньше */
 @media only screen and (max-width: 320px) {
@@ -1424,5 +1468,15 @@
   }
   .matches-calendar-table td.matches-calendar-table__td--tournament {
     margin-top: 0px;
+  }
+  .scorers-table th {
+    font-size: 6px;
+  }
+  .scorers-table td,
+  .scorers-table td a {
+    font-size: 9px;
+  }
+  .scorers-table tbody td {
+    height: 29px;
   }
 }

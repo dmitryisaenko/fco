@@ -1,6 +1,13 @@
 h1.page-header__matches-calendar::before {
         width: 95px;
+}
 
+h1.page-header__matches-scorers::before {
+        width: 120px;
+}
+
+h1.page-header__matches-exluded::before {
+        width: 141px;
 }
 
 .info-block-container__wo-top-border {
@@ -356,3 +363,75 @@ ul.horizontal-tabs-list li.active {
   margin: 0 auto;
 }
 
+
+
+//********************
+//Scorers Page
+//********************
+.scorers-table{
+        border-spacing: 1px;
+  height: 100%;
+  width: 100%;
+//     border-collapse: inherit;
+    table-layout: fixed;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.scorers-table thead tr{
+        height: 30px; 
+}
+
+.scorers-table th{
+        color: #717378;
+        border: 0;
+        font-size: 16px;
+        font-weight: 400;
+        height: auto;
+        background: transparent;  
+           
+}
+
+.scorers-table th:nth-child(1){
+        width: 71px;
+}
+
+.scorers-table th:nth-child(2){
+        width: 190px;
+}
+
+.scorers-table tbody td{
+        height: 59px;
+}
+
+.scorers-table td.scorer_img{
+    background: url(/img/bgitemsmini.png);
+    background-size: cover;
+    padding-bottom: 0;
+    
+       
+}
+
+.scorers-table td.scorer_img img{
+        display: inline-block;
+        height: 59px;
+        width: auto;
+        vertical-align: bottom;
+}
+
+
+.scorers-table tbody tr:nth-child(odd){
+        background: #EEF5F8;
+        border-top: 1px solid #EEF5F8;
+        border-bottom: 1px solid #EEF5F8;  
+}
+
+.scorers-table td.scorer_name{
+        background: #ffc934;      
+}
+
+.scorers-table td,
+.scorers-table td a{
+        font-size: 18px;
+    color: #27282C;
+}
